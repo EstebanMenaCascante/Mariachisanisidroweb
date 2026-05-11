@@ -1,0 +1,40 @@
+import type { QuoteFormValues, Song } from "./types";
+
+export function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
+
+export function buildQuoteMessage(form: QuoteFormValues) {
+  return [
+    "¡Hola! Me gustaría cotizar un evento:",
+    "",
+    `Nombre: ${form.name}`,
+    `Teléfono: ${form.phone}`,
+    `Fecha: ${form.date}`,
+    `Hora: ${form.time} ${form.ampm}`,
+    `Duración: ${form.duration}`,
+    `Ubicación: ${form.location}`,
+    `Tipo de evento: ${form.eventType}`,
+    `Comentarios: ${form.comments}`,
+  ].join("\n");
+}
+
+export function filterSongs(
+  songs: Song[],
+  search: string,
+  activeFilter: string | null,
+) {
+  const normalizedSearch = search.trim().toLowerCase();
+
+  return songs.filter((song) => {
+    const matchSearch =
+      !normalizedSearch || song.title.toLowerCase().includes(normalizedSearch);
+    const matchFilter =
+      !activeFilter ||
+      song.occasion === activeFilter ||
+      song.genre === activeFilter ||
+      song.mood === activeFilter;
+
+    return matchSearch && matchFilter;
+  });
+}
