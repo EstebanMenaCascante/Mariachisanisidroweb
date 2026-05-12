@@ -14,7 +14,16 @@ export const navSections = [
 
 export const members: Member[] = integrantesData;
 
-export const songs: Song[] = cancionesData;
+export const songs: Song[] = (
+  cancionesData as Array<
+    Omit<Song, "occasion"> & { occasion: string | string[] }
+  >
+).map((song) => ({
+  ...song,
+  occasion: Array.isArray(song.occasion)
+    ? song.occasion.filter(Boolean)
+    : [song.occasion].filter(Boolean),
+}));
 
 export const gallery: GalleryItem[] = galeriaData as GalleryItem[];
 

@@ -9,7 +9,7 @@ export type Member = {
 export type Song = {
   title: string;
   tags: string[];
-  occasion: string;
+  occasion: string[];
   genre: string;
   mood: string;
   youtubeUrl: string;

@@ -82,6 +82,7 @@ const siteCopy = {
         vals: "Valses",
         dolidas: "Dolidas",
         religiosas: "Religiosas",
+        valsrancheros: "Valses rancheros",
       },
       mood: {
         happy: "Alegre",

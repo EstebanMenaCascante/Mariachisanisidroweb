@@ -67,11 +67,14 @@ export function filterSongs(
   const normalizedSearch = search.trim().toLowerCase();
 
   return songs.filter((song) => {
+    const songOccasions = Array.isArray(song.occasion)
+      ? song.occasion
+      : [song.occasion];
     const matchSearch =
       !normalizedSearch || song.title.toLowerCase().includes(normalizedSearch);
     const matchFilter =
       !activeFilter ||
-      song.occasion === activeFilter ||
+      songOccasions.includes(activeFilter) ||
       song.genre === activeFilter ||
       song.mood === activeFilter;
 
