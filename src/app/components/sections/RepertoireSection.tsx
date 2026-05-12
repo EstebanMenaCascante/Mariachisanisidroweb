@@ -1,4 +1,5 @@
-import { Search, Youtube } from "lucide-react";
+import { ChevronDown, ChevronUp, Search, Youtube } from "lucide-react";
+import { useState } from "react";
 
 import { SectionHeading } from "../common/SectionHeading";
 import type { Song } from "../../types";
@@ -27,8 +28,19 @@ export function RepertoireSection({
   onToggleFilter,
   filteredSongs,
 }: RepertoireSectionProps) {
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
+    {},
+  );
+
   const chipClassName = (value: string) =>
     `px-4 py-2 rounded-full text-sm transition-colors cursor-pointer ${activeFilter === value ? "bg-[#D4AF37] text-black" : "bg-white/10 hover:bg-white/20 text-white"}`;
+
+  const toggleGroupExpanded = (groupKey: string) => {
+    setExpandedGroups((current) => ({
+      ...current,
+      [groupKey]: !current[groupKey],
+    }));
+  };
 
   return (
     <section id="repertorio" className="py-20 bg-black text-white">
@@ -59,15 +71,35 @@ export function RepertoireSection({
                 {t(group.labelKey)}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {group.items.map((value) => (
+                {group.items
+                  .slice(0, expandedGroups[group.labelKey] ? undefined : 4)
+                  .map((value) => (
+                    <button
+                      key={value}
+                      onClick={() => onToggleFilter(value)}
+                      className={chipClassName(value)}
+                    >
+                      {t(`${group.prefix}${value}` as SiteCopyKey)}
+                    </button>
+                  ))}
+                {group.items.length > 4 ? (
                   <button
-                    key={value}
-                    onClick={() => onToggleFilter(value)}
-                    className={chipClassName(value)}
+                    type="button"
+                    onClick={() => toggleGroupExpanded(group.labelKey)}
+                    className="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm transition-colors border border-white/20 bg-white/5 text-gray-200 hover:bg-white/10 hover:text-white"
+                    aria-expanded={Boolean(expandedGroups[group.labelKey])}
+                    aria-label={`${expandedGroups[group.labelKey] ? t("repertoire.less") : t("repertoire.more")} ${t(group.labelKey)}`}
                   >
-                    {t(`${group.prefix}${value}` as SiteCopyKey)}
+                    {expandedGroups[group.labelKey]
+                      ? t("repertoire.less")
+                      : t("repertoire.more")}
+                    {expandedGroups[group.labelKey] ? (
+                      <ChevronUp className="w-4 h-4" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4" />
+                    )}
                   </button>
-                ))}
+                ) : null}
               </div>
             </div>
           ))}
