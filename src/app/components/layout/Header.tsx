@@ -1,4 +1,4 @@
-import { Menu, Music, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import type { Dispatch, SetStateAction } from "react";
 
 import { navSections } from "../../content";
@@ -31,8 +31,12 @@ export function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#FFD700] rounded-full flex items-center justify-center">
-              <Music className="w-6 h-6 text-black" />
+            <div className="w-16 h-16 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-2xl flex items-center justify-center overflow-hidden shadow-lg shadow-black/20 ring-1 ring-white/20">
+              <img
+                src="/Mariachisanisidroweb/images/encabezado/Mariachi_logo.png"
+                alt="Mariachi San Isidro"
+                className="w-20 h-20 object-contain object-center block"
+              />
             </div>
             <div>
               <h1 className="text-xl font-['Playfair_Display'] font-bold text-white">
