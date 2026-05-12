@@ -9,6 +9,7 @@ import { HeroSection } from "./components/sections/HeroSection";
 import { MembersSection } from "./components/sections/MembersSection";
 import { QuoteSection } from "./components/sections/QuoteSection";
 import { RepertoireSection } from "./components/sections/RepertoireSection";
+import { RepertoryAdminPage } from "./components/sections/RepertoryAdminPage";
 import {
   gallery,
   initialQuoteForm,
@@ -25,6 +26,16 @@ import { buildQuoteMessage, filterSongs, scrollToSection } from "./utils";
 import type { QuoteFormValues } from "./types";
 
 export default function App() {
+  const pathname =
+    typeof window !== "undefined" ? window.location.pathname : "";
+  const isRepertoryAdminRoute = pathname
+    .replace(/\/+$/, "")
+    .endsWith("/addrepertory");
+
+  if (isRepertoryAdminRoute) {
+    return <RepertoryAdminPage />;
+  }
+
   const [lang, setLang] = useState<SiteLanguage>("es");
   const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState("");
