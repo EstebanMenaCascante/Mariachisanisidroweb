@@ -174,7 +174,7 @@ export const songs: Song[] = [
     mood: "party",
   },
   {
-    title: "Para Morir Iguales",
+    title: "Sabes una Cosa",
     tags: ["romantic"],
     occasion: "wedding",
     genre: "romantic",
