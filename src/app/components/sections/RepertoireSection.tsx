@@ -91,10 +91,15 @@ export function RepertoireSection({
                     </span>
                   ))}
                 </div>
-                <button className="flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#FFD700] transition-colors">
+                <a
+                  href={song.youtubeUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#FFD700] transition-colors"
+                >
                   <Youtube className="w-4 h-4" />
                   {t("repertoire.listen")}
-                </button>
+                </a>
               </div>
             ))}
           </div>

@@ -1,0 +1,32 @@
+[
+  {
+    "type": "image",
+    "url": "/images/galeria/presentacion-tradicional.jpg",
+    "title": "Presentación tradicional"
+  },
+  {
+    "type": "image",
+    "url": "/images/galeria/presentacion-en-vivo.jpg",
+    "title": "Presentación en vivo"
+  },
+  {
+    "type": "video",
+    "url": "/videos/video-del-grupo.mp4",
+    "title": "Video del grupo"
+  },
+  {
+    "type": "image",
+    "url": "/images/galeria/boda-especial.jpg",
+    "title": "Boda especial"
+  },
+  {
+    "type": "image",
+    "url": "/images/galeria/detalle-de-guitarra.jpg",
+    "title": "Detalle de guitarra"
+  },
+  {
+    "type": "video",
+    "url": "/videos/video-en-serenata.mp4",
+    "title": "Video en serenata"
+  }
+]

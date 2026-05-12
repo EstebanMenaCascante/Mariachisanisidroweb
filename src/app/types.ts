@@ -12,6 +12,7 @@ export type Song = {
   occasion: string;
   genre: string;
   mood: string;
+  youtubeUrl: string;
 };
 
 export type GalleryItem = {

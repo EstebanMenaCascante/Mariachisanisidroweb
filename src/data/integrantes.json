@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Andrés Mora",
+    "instrument": "Vihuela",
+    "image": "/images/integrantes/andres-mora.jpg"
+  },
+  {
+    "name": "Gustavo Blanco",
+    "instrument": "Guitarrón",
+    "image": "/images/integrantes/gustavo-blanco.jpg"
+  },
+  {
+    "name": "Cristian Hidalgo",
+    "instrument": "Guitarra",
+    "image": "/images/integrantes/cristian-hidalgo.jpg"
+  },
+  {
+    "name": "Gerardo Barrantes",
+    "instrument": "Acordeón",
+    "image": "/images/integrantes/gerardo-barrantes.jpg"
+  },
+  {
+    "name": "Esteban Mena",
+    "instrument": "Trompeta",
+    "image": "/images/integrantes/esteban-mena.jpg"
+  },
+  {
+    "name": "Sebastian Monge",
+    "instrument": "Trompeta",
+    "image": "/images/integrantes/sebastian-monge.jpg"
+  }
+]
