@@ -14,6 +14,7 @@ import type { Song } from "../../types";
 import {
   getRepertoireFilterGroups,
   createSiteCopyTranslator,
+  type SiteCopyKey,
 } from "../../siteCopy";
 
 const REPERTORY_ADMIN_PASSWORD = "sanisidro26";
@@ -86,15 +87,18 @@ const moodOptions =
     ?.items ?? [];
 
 const occasionLabels = Object.fromEntries(
-  occasionOptions.map((key) => [key, t(`repertoire.occasion.${key}` as const)]),
+  occasionOptions.map((key) => [
+    key,
+    t(`repertoire.occasion.${key}` as SiteCopyKey),
+  ]),
 );
 
 const genreLabels = Object.fromEntries(
-  genreOptions.map((key) => [key, t(`repertoire.genre.${key}` as const)]),
+  genreOptions.map((key) => [key, t(`repertoire.genre.${key}` as SiteCopyKey)]),
 );
 
 const moodLabels = Object.fromEntries(
-  moodOptions.map((key) => [key, t(`repertoire.mood.${key}` as const)]),
+  moodOptions.map((key) => [key, t(`repertoire.mood.${key}` as SiteCopyKey)]),
 );
 
 export function RepertoryAdminPage() {
