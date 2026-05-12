@@ -34,8 +34,10 @@ export function createRepertoirePath(
   }
 
   const queryString = params.toString();
+  const base = import.meta.env.BASE_URL || "/";
+  const path = basePath.startsWith("/") ? basePath : `${base}${basePath}`;
 
-  return queryString ? `${basePath}?${queryString}` : basePath;
+  return queryString ? `${path}?${queryString}` : path;
 }
 
 export function scrollToSection(id: string) {

@@ -72,7 +72,7 @@ export default function App() {
         t={t}
         repertoireFilterGroups={repertoireFilterGroups}
         songs={songs}
-        homeHref={createRepertoirePath("./", repertoireQueryState)}
+        homeHref={createRepertoirePath("", repertoireQueryState)}
       />
     );
   }
@@ -123,7 +123,7 @@ export default function App() {
           repertoireFilterGroups={repertoireFilterGroups}
           songs={songs}
           previewLimit={6}
-          viewAllHref="./repertorio"
+          viewAllHref="repertorio"
         />
         <GallerySection
           t={t}
