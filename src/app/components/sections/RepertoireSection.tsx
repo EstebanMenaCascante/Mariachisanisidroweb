@@ -61,7 +61,7 @@ export function RepertoireSection({
       ? filteredSongs.slice(0, previewLimit)
       : filteredSongs;
   const hasMoreSongs =
-    Boolean(previewLimit) &&
+    typeof previewLimit === "number" &&
     !hasActiveSearch &&
     filteredSongs.length > previewLimit;
 
@@ -95,7 +95,7 @@ export function RepertoireSection({
   };
 
   return (
-    <section id="repertorio" className="py-16 sm:py-20 bg-black text-white">
+    <section id="repertorio" className="py-20 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title={t("repertoire.title")}
@@ -103,7 +103,7 @@ export function RepertoireSection({
           dark
         />
 
-        <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
+        <div className="max-w-2xl mx-auto mb-12">
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
@@ -116,7 +116,7 @@ export function RepertoireSection({
           </div>
         </div>
 
-        <div className="space-y-5 sm:space-y-6 mb-8 sm:mb-12">
+        <div className="space-y-6 mb-12">
           {repertoireFilterGroups.map((group) => (
             <div key={group.labelKey}>
               <h3 className="text-sm font-medium text-gray-400 mb-3">
@@ -158,20 +158,20 @@ export function RepertoireSection({
         </div>
 
         {visibleSongs.length > 0 ? (
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {visibleSongs.map((song) => (
               <div
                 key={song.title}
-                className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all group"
+                className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all group"
               >
-                <h4 className="font-medium text-sm sm:text-base text-white mb-2 group-hover:text-[#D4AF37] transition-colors leading-tight">
+                <h4 className="font-medium text-white mb-2 group-hover:text-[#D4AF37] transition-colors">
                   {song.title}
                 </h4>
                 <div className="flex flex-wrap gap-1 mb-3">
                   {song.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[11px] sm:text-xs px-2 py-1 bg-white/10 rounded-full text-gray-400"
+                      className="text-xs px-2 py-1 bg-white/10 rounded-full text-gray-400"
                     >
                       {tag}
                     </span>
@@ -181,7 +181,7 @@ export function RepertoireSection({
                   href={song.youtubeUrl}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm text-[#D4AF37] hover:text-[#FFD700] transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#FFD700] transition-colors"
                 >
                   <Youtube className="w-4 h-4" />
                   {t("repertoire.listen")}
@@ -196,13 +196,13 @@ export function RepertoireSection({
         )}
 
         {hasMoreSongs && viewAllHref ? (
-          <div className="mt-8 sm:mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <a
               href={createRepertoirePath(viewAllHref, {
                 search,
                 filter: activeFilter,
               })}
-              className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/40 bg-[#D4AF37] px-5 sm:px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-[#FFD700]"
+              className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/40 bg-[#D4AF37] px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-[#FFD700]"
             >
               {t("repertoire.viewAll")}
             </a>
