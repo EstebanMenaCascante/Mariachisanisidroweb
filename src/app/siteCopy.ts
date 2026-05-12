@@ -52,6 +52,8 @@ const siteCopy = {
       search: "Buscar canción...",
       more: "Más",
       less: "Menos",
+      viewAll: "Ver repertorio completo",
+      backHome: "Volver al inicio",
       filter: {
         occasion: "Por Ocasión",
         genre: "Por Género",
@@ -194,6 +196,8 @@ const siteCopy = {
       search: "Search song...",
       more: "More",
       less: "Less",
+      viewAll: "View full repertoire",
+      backHome: "Back to home",
       filter: {
         occasion: "By Occasion",
         genre: "By Genre",

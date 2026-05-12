@@ -1,5 +1,43 @@
 import type { QuoteFormValues, Song } from "./types";
 
+export const REPERTOIRE_QUERY_KEYS = {
+  search: "search",
+  filter: "filter",
+} as const;
+
+export type RepertoireQueryState = {
+  search: string;
+  filter: string | null;
+};
+
+export function getRepertoireQueryState(
+  searchParams: URLSearchParams,
+): RepertoireQueryState {
+  return {
+    search: searchParams.get(REPERTOIRE_QUERY_KEYS.search) ?? "",
+    filter: searchParams.get(REPERTOIRE_QUERY_KEYS.filter),
+  };
+}
+
+export function createRepertoirePath(
+  basePath: string,
+  queryState: RepertoireQueryState,
+) {
+  const params = new URLSearchParams();
+
+  if (queryState.search.trim()) {
+    params.set(REPERTOIRE_QUERY_KEYS.search, queryState.search.trim());
+  }
+
+  if (queryState.filter) {
+    params.set(REPERTOIRE_QUERY_KEYS.filter, queryState.filter);
+  }
+
+  const queryString = params.toString();
+
+  return queryString ? `${basePath}?${queryString}` : basePath;
+}
+
 export function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }

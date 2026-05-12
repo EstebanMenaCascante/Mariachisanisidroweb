@@ -1,19 +1,22 @@
 import { ChevronDown, ChevronUp, Search, Youtube } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { SectionHeading } from "../common/SectionHeading";
-import type { Song } from "../../types";
 import type { RepertoireFilterGroup } from "../../types";
+import type { Song } from "../../types";
 import type { SiteCopyKey } from "../../siteCopy";
+import {
+  createRepertoirePath,
+  filterSongs,
+  getRepertoireQueryState,
+} from "../../utils";
 
 type RepertoireSectionProps = {
   t: (key: SiteCopyKey) => string;
   repertoireFilterGroups: RepertoireFilterGroup[];
-  search: string;
-  setSearch: (value: string) => void;
-  activeFilter: string | null;
-  onToggleFilter: (value: string) => void;
-  filteredSongs: Song[];
+  songs: Song[];
+  previewLimit?: number;
+  viewAllHref?: string;
 };
 
 const inputClassName =
@@ -22,18 +25,67 @@ const inputClassName =
 export function RepertoireSection({
   t,
   repertoireFilterGroups,
-  search,
-  setSearch,
-  activeFilter,
-  onToggleFilter,
-  filteredSongs,
+  songs,
+  previewLimit,
+  viewAllHref,
 }: RepertoireSectionProps) {
+  const [search, setSearch] = useState(() => {
+    if (typeof window === "undefined") {
+      return "";
+    }
+
+    return getRepertoireQueryState(new URLSearchParams(window.location.search))
+      .search;
+  });
+  const [activeFilter, setActiveFilter] = useState<string | null>(() => {
+    if (typeof window === "undefined") {
+      return null;
+    }
+
+    return getRepertoireQueryState(new URLSearchParams(window.location.search))
+      .filter;
+  });
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
     {},
   );
 
+  const filteredSongs = useMemo(
+    () => filterSongs(songs, search, activeFilter),
+    [songs, search, activeFilter],
+  );
+
+  const isPreviewMode = Boolean(previewLimit);
+  const hasActiveSearch = Boolean(search.trim()) || Boolean(activeFilter);
+  const visibleSongs =
+    isPreviewMode && !hasActiveSearch
+      ? filteredSongs.slice(0, previewLimit)
+      : filteredSongs;
+  const hasMoreSongs =
+    Boolean(previewLimit) &&
+    !hasActiveSearch &&
+    filteredSongs.length > previewLimit;
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const nextPath = createRepertoirePath(window.location.pathname, {
+      search,
+      filter: activeFilter,
+    });
+
+    if (`${window.location.pathname}${window.location.search}` !== nextPath) {
+      window.history.replaceState(null, "", nextPath);
+    }
+  }, [search, activeFilter]);
+
   const chipClassName = (value: string) =>
     `px-4 py-2 rounded-full text-sm transition-colors cursor-pointer ${activeFilter === value ? "bg-[#D4AF37] text-black" : "bg-white/10 hover:bg-white/20 text-white"}`;
+
+  const handleToggleFilter = (value: string) => {
+    setActiveFilter((previous) => (previous === value ? null : value));
+  };
 
   const toggleGroupExpanded = (groupKey: string) => {
     setExpandedGroups((current) => ({
@@ -76,7 +128,7 @@ export function RepertoireSection({
                   .map((value) => (
                     <button
                       key={value}
-                      onClick={() => onToggleFilter(value)}
+                      onClick={() => handleToggleFilter(value)}
                       className={chipClassName(value)}
                     >
                       {t(`${group.prefix}${value}` as SiteCopyKey)}
@@ -105,9 +157,9 @@ export function RepertoireSection({
           ))}
         </div>
 
-        {filteredSongs.length > 0 ? (
+        {visibleSongs.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredSongs.map((song) => (
+            {visibleSongs.map((song) => (
               <div
                 key={song.title}
                 className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-[#D4AF37]/50 transition-all group"
@@ -142,6 +194,20 @@ export function RepertoireSection({
             <p className="text-gray-400 text-lg">{t("repertoire.empty")}</p>
           </div>
         )}
+
+        {hasMoreSongs && viewAllHref ? (
+          <div className="mt-10 flex justify-center">
+            <a
+              href={createRepertoirePath(viewAllHref, {
+                search,
+                filter: activeFilter,
+              })}
+              className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/40 bg-[#D4AF37] px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-[#FFD700]"
+            >
+              {t("repertoire.viewAll")}
+            </a>
+          </div>
+        ) : null}
       </div>
     </section>
   );

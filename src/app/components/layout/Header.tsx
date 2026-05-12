@@ -10,7 +10,9 @@ type HeaderProps = {
   menuOpen: boolean;
   setMenuOpen: Dispatch<SetStateAction<boolean>>;
   t: (key: SiteCopyKey) => string;
-  onNavigate: (sectionId: string) => void;
+  onNavigate?: (sectionId: string) => void;
+  mode?: "home" | "page";
+  homeHref?: string;
 };
 
 export function Header({
@@ -20,9 +22,11 @@ export function Header({
   setMenuOpen,
   t,
   onNavigate,
+  mode = "home",
+  homeHref = "/",
 }: HeaderProps) {
   const handleNavigate = (sectionId: string) => {
-    onNavigate(sectionId);
+    onNavigate?.(sectionId);
     setMenuOpen(false);
   };
 
@@ -48,23 +52,32 @@ export function Header({
             </div>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-8">
-            {navSections.map((sectionId) => (
+          {mode === "home" ? (
+            <nav className="hidden lg:flex items-center gap-8">
+              {navSections.map((sectionId) => (
+                <button
+                  key={sectionId}
+                  onClick={() => handleNavigate(sectionId)}
+                  className="text-white hover:text-[#D4AF37] transition-colors"
+                >
+                  {t(`nav.${sectionId}` as SiteCopyKey)}
+                </button>
+              ))}
               <button
-                key={sectionId}
-                onClick={() => handleNavigate(sectionId)}
-                className="text-white hover:text-[#D4AF37] transition-colors"
+                onClick={() => handleNavigate("cotizar")}
+                className="bg-[#D4AF37] hover:bg-[#FFD700] text-black px-6 py-2 rounded-full transition-colors"
               >
-                {t(`nav.${sectionId}` as SiteCopyKey)}
+                {t("nav.cotizar")}
               </button>
-            ))}
-            <button
-              onClick={() => handleNavigate("cotizar")}
-              className="bg-[#D4AF37] hover:bg-[#FFD700] text-black px-6 py-2 rounded-full transition-colors"
+            </nav>
+          ) : (
+            <a
+              href={homeHref}
+              className="hidden lg:inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2 text-white transition-colors hover:bg-white/10 hover:text-[#D4AF37]"
             >
-              {t("nav.cotizar")}
-            </button>
-          </nav>
+              <span>{t("repertoire.backHome")}</span>
+            </a>
+          )}
 
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 bg-white/10 rounded-full px-3 py-1.5">
@@ -80,20 +93,22 @@ export function Header({
                 </span>
               ))}
             </div>
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden text-white p-2"
-            >
-              {menuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+            {mode === "home" ? (
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="lg:hidden text-white p-2"
+              >
+                {menuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            ) : null}
           </div>
         </div>
 
-        {menuOpen && (
+        {mode === "home" && menuOpen && (
           <div className="lg:hidden py-4 border-t border-[#D4AF37]/20">
             <nav className="flex flex-col gap-4">
               {navSections.map((sectionId) => (

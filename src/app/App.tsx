@@ -9,6 +9,7 @@ import { HeroSection } from "./components/sections/HeroSection";
 import { MembersSection } from "./components/sections/MembersSection";
 import { QuoteSection } from "./components/sections/QuoteSection";
 import { RepertoireSection } from "./components/sections/RepertoireSection";
+import { RepertoirePage } from "./components/sections/RepertoirePage";
 import { RepertoryAdminPage } from "./components/sections/RepertoryAdminPage";
 import {
   gallery,
@@ -22,7 +23,13 @@ import {
   getRepertoireFilterGroups,
   type SiteLanguage,
 } from "./siteCopy";
-import { buildQuoteMessage, filterSongs, scrollToSection } from "./utils";
+import {
+  buildQuoteMessage,
+  createRepertoirePath,
+  getRepertoireQueryState,
+  type RepertoireQueryState,
+  scrollToSection,
+} from "./utils";
 import type { QuoteFormValues } from "./types";
 
 export default function App() {
@@ -31,15 +38,16 @@ export default function App() {
   const isRepertoryAdminRoute = pathname
     .replace(/\/+$/, "")
     .endsWith("/addrepertory");
-
-  if (isRepertoryAdminRoute) {
-    return <RepertoryAdminPage />;
-  }
+  const isRepertoireRoute = pathname
+    .replace(/\/+$/, "")
+    .endsWith("/repertorio");
+  const repertoireQueryState: RepertoireQueryState =
+    typeof window !== "undefined"
+      ? getRepertoireQueryState(new URLSearchParams(window.location.search))
+      : { search: "", filter: null };
 
   const [lang, setLang] = useState<SiteLanguage>("es");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [search, setSearch] = useState("");
-  const [activeFilter, setActiveFilter] = useState<string | null>(null);
   const [lightbox, setLightbox] = useState<number | null>(null);
   const [form, setForm] = useState<QuoteFormValues>(initialQuoteForm);
   const [sent, setSent] = useState(false);
@@ -49,10 +57,25 @@ export default function App() {
     () => getRepertoireFilterGroups(lang),
     [lang],
   );
-  const filteredSongs = useMemo(
-    () => filterSongs(songs, search, activeFilter),
-    [search, activeFilter],
-  );
+
+  if (isRepertoryAdminRoute) {
+    return <RepertoryAdminPage />;
+  }
+
+  if (isRepertoireRoute) {
+    return (
+      <RepertoirePage
+        lang={lang}
+        setLang={setLang}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        t={t}
+        repertoireFilterGroups={repertoireFilterGroups}
+        songs={songs}
+        homeHref={createRepertoirePath("/", repertoireQueryState)}
+      />
+    );
+  }
 
   const handleNavigate = (sectionId: string) => {
     scrollToSection(sectionId);
@@ -60,10 +83,6 @@ export default function App() {
 
   const handleWhatsApp = () => {
     window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
-  };
-
-  const handleToggleFilter = (value: string) => {
-    setActiveFilter((previous) => (previous === value ? null : value));
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -102,11 +121,9 @@ export default function App() {
         <RepertoireSection
           t={t}
           repertoireFilterGroups={repertoireFilterGroups}
-          search={search}
-          setSearch={setSearch}
-          activeFilter={activeFilter}
-          onToggleFilter={handleToggleFilter}
-          filteredSongs={filteredSongs}
+          songs={songs}
+          previewLimit={6}
+          viewAllHref="/repertorio"
         />
         <GallerySection
           t={t}
