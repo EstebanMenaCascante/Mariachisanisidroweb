@@ -1,10 +1,4 @@
-import type {
-  GalleryItem,
-  Member,
-  QuoteFormValues,
-  RepertoireFilterGroup,
-  Song,
-} from "./types";
+import type { GalleryItem, Member, QuoteFormValues, Song } from "./types";
 
 import integrantesData from "../data/integrantes.json";
 import cancionesData from "../data/canciones.json";
@@ -23,24 +17,6 @@ export const members: Member[] = integrantesData;
 export const songs: Song[] = cancionesData;
 
 export const gallery: GalleryItem[] = galeriaData as GalleryItem[];
-
-export const repertoireFilterGroups: RepertoireFilterGroup[] = [
-  {
-    labelKey: "repertoire.filter.occasion",
-    items: ["mama", "papa", "wedding", "proposal", "birthday", "party"],
-    prefix: "repertoire.occasion.",
-  },
-  {
-    labelKey: "repertoire.filter.genre",
-    items: ["romantic", "rancheras", "cumbias", "corridos", "boleros"],
-    prefix: "repertoire.genre.",
-  },
-  {
-    labelKey: "repertoire.filter.mood",
-    items: ["happy", "sentimental", "party"],
-    prefix: "repertoire.mood.",
-  },
-];
 
 export const WHATSAPP_PHONE = "50685676230";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;

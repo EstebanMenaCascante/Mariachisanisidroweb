@@ -1,10 +1,10 @@
 import { SectionHeading } from "../common/SectionHeading";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import type { Member } from "../../types";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type MembersSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   members: Member[];
 };
 

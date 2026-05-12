@@ -1,10 +1,10 @@
 import { Calendar, MessageCircle } from "lucide-react";
 
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type HeroSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   onQuote: () => void;
   onWhatsApp: () => void;
 };

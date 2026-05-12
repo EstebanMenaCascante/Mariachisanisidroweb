@@ -3,10 +3,10 @@ import type { Dispatch, FormEvent, SetStateAction } from "react";
 
 import { SectionHeading } from "../common/SectionHeading";
 import type { QuoteFormValues } from "../../types";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type QuoteSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   form: QuoteFormValues;
   setForm: Dispatch<SetStateAction<QuoteFormValues>>;
   onSubmit: (event: FormEvent<HTMLFormElement>) => void;
@@ -99,7 +99,7 @@ export function QuoteSection({
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    {t("quote.ampm")} *
+                    {t("quote.ampm.label")} *
                   </label>
                   <select
                     name="ampm"
@@ -120,7 +120,7 @@ export function QuoteSection({
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                {t("quote.duration")} *
+                {t("quote.duration.label")} *
               </label>
               <select
                 name="duration"
@@ -133,10 +133,10 @@ export function QuoteSection({
                 }
                 className={inputClassName}
               >
-                <option value="30min">{t("quote.duration.30min")}</option>
-                <option value="1hour">{t("quote.duration.1hour")}</option>
-                <option value="2hours">{t("quote.duration.2hours")}</option>
-                <option value="3hours">{t("quote.duration.3hours")}</option>
+                <option value="30min">{t("quote.duration.minutes30")}</option>
+                <option value="1hour">{t("quote.duration.hours1")}</option>
+                <option value="2hours">{t("quote.duration.hours2")}</option>
+                <option value="3hours">{t("quote.duration.hours3")}</option>
               </select>
             </div>
             <div>
@@ -156,7 +156,7 @@ export function QuoteSection({
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                {t("quote.eventType")} *
+                {t("quote.eventType.label")} *
               </label>
               <select
                 name="eventType"
@@ -180,7 +180,7 @@ export function QuoteSection({
                   "other",
                 ].map((eventType) => (
                   <option key={eventType} value={eventType}>
-                    {t(`quote.eventType.${eventType}` as TranslationKey)}
+                    {t(`quote.eventType.${eventType}` as SiteCopyKey)}
                   </option>
                 ))}
               </select>

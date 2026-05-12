@@ -1,4 +1,4 @@
-import type { TranslationKey } from "./i18n";
+import type { SiteCopyKey } from "./siteCopy";
 
 export type Member = {
   name: string;
@@ -41,7 +41,7 @@ export type QuoteFormValues = {
 };
 
 export type RepertoireFilterGroup = {
-  labelKey: TranslationKey;
+  labelKey: SiteCopyKey;
   items: readonly string[];
   prefix: "repertoire.occasion." | "repertoire.genre." | "repertoire.mood.";
 };

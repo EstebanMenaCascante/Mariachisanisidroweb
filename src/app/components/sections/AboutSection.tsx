@@ -2,10 +2,10 @@ import { Award, Music2, Users } from "lucide-react";
 
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { SectionHeading } from "../common/SectionHeading";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type AboutSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
 };
 
 export function AboutSection({ t }: AboutSectionProps) {
@@ -45,10 +45,10 @@ export function AboutSection({ t }: AboutSectionProps) {
                 <Icon className="w-8 h-8 text-black" />
               </div>
               <h4 className="font-['Playfair_Display'] text-xl font-bold text-black mb-2">
-                {t(`about.values.${key}` as TranslationKey)}
+                {t(`about.values.${key}.label` as SiteCopyKey)}
               </h4>
               <p className="text-gray-600">
-                {t(`about.values.${key}.desc` as TranslationKey)}
+                {t(`about.values.${key}.description` as SiteCopyKey)}
               </p>
             </div>
           ))}

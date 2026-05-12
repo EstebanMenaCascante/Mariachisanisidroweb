@@ -1,9 +1,9 @@
 import { Music } from "lucide-react";
 
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type FooterProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
 };
 
 export function Footer({ t }: FooterProps) {

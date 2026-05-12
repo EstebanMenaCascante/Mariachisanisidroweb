@@ -2,14 +2,14 @@ import { Menu, X } from "lucide-react";
 import type { Dispatch, SetStateAction } from "react";
 
 import { navSections } from "../../content";
-import type { Lang, TranslationKey } from "../../i18n";
+import type { SiteCopyKey, SiteLanguage } from "../../siteCopy";
 
 type HeaderProps = {
-  lang: Lang;
-  setLang: Dispatch<SetStateAction<Lang>>;
+  lang: SiteLanguage;
+  setLang: Dispatch<SetStateAction<SiteLanguage>>;
   menuOpen: boolean;
   setMenuOpen: Dispatch<SetStateAction<boolean>>;
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   onNavigate: (sectionId: string) => void;
 };
 
@@ -42,7 +42,9 @@ export function Header({
               <h1 className="text-xl font-['Playfair_Display'] font-bold text-white">
                 Mariachi San Isidro
               </h1>
-              <p className="text-xs text-[#D4AF37]">Costa Rica</p>
+              <p className="text-xs text-[#D4AF37]">
+                Pérez Zeledón, Costa Rica
+              </p>
             </div>
           </div>
 
@@ -53,7 +55,7 @@ export function Header({
                 onClick={() => handleNavigate(sectionId)}
                 className="text-white hover:text-[#D4AF37] transition-colors"
               >
-                {t(`nav.${sectionId}` as TranslationKey)}
+                {t(`nav.${sectionId}` as SiteCopyKey)}
               </button>
             ))}
             <button
@@ -100,7 +102,7 @@ export function Header({
                   onClick={() => handleNavigate(sectionId)}
                   className="text-white hover:text-[#D4AF37] transition-colors text-left"
                 >
-                  {t(`nav.${sectionId}` as TranslationKey)}
+                  {t(`nav.${sectionId}` as SiteCopyKey)}
                 </button>
               ))}
               <button

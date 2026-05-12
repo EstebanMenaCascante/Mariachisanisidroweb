@@ -1,12 +1,13 @@
 import { Search, Youtube } from "lucide-react";
 
 import { SectionHeading } from "../common/SectionHeading";
-import { repertoireFilterGroups } from "../../content";
 import type { Song } from "../../types";
-import type { TranslationKey } from "../../i18n";
+import type { RepertoireFilterGroup } from "../../types";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type RepertoireSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
+  repertoireFilterGroups: RepertoireFilterGroup[];
   search: string;
   setSearch: (value: string) => void;
   activeFilter: string | null;
@@ -19,6 +20,7 @@ const inputClassName =
 
 export function RepertoireSection({
   t,
+  repertoireFilterGroups,
   search,
   setSearch,
   activeFilter,
@@ -63,7 +65,7 @@ export function RepertoireSection({
                     onClick={() => onToggleFilter(value)}
                     className={chipClassName(value)}
                   >
-                    {t(`${group.prefix}${value}` as TranslationKey)}
+                    {t(`${group.prefix}${value}` as SiteCopyKey)}
                   </button>
                 ))}
               </div>

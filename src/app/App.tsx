@@ -16,12 +16,16 @@ import {
   songs,
   WHATSAPP_URL,
 } from "./content";
-import { createTranslator, type Lang } from "./i18n";
+import {
+  createSiteCopyTranslator,
+  getRepertoireFilterGroups,
+  type SiteLanguage,
+} from "./siteCopy";
 import { buildQuoteMessage, filterSongs, scrollToSection } from "./utils";
 import type { QuoteFormValues } from "./types";
 
 export default function App() {
-  const [lang, setLang] = useState<Lang>("es");
+  const [lang, setLang] = useState<SiteLanguage>("es");
   const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -29,7 +33,11 @@ export default function App() {
   const [form, setForm] = useState<QuoteFormValues>(initialQuoteForm);
   const [sent, setSent] = useState(false);
 
-  const t = useMemo(() => createTranslator(lang), [lang]);
+  const t = useMemo(() => createSiteCopyTranslator(lang), [lang]);
+  const repertoireFilterGroups = useMemo(
+    () => getRepertoireFilterGroups(lang),
+    [lang],
+  );
   const filteredSongs = useMemo(
     () => filterSongs(songs, search, activeFilter),
     [search, activeFilter],
@@ -82,6 +90,7 @@ export default function App() {
         <MembersSection t={t} members={members} />
         <RepertoireSection
           t={t}
+          repertoireFilterGroups={repertoireFilterGroups}
           search={search}
           setSearch={setSearch}
           activeFilter={activeFilter}

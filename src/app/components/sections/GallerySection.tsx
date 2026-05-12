@@ -3,10 +3,10 @@ import { Play, X } from "lucide-react";
 import { SectionHeading } from "../common/SectionHeading";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import type { GalleryItem } from "../../types";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type GallerySectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   gallery: GalleryItem[];
   lightbox: number | null;
   setLightbox: (value: number | null) => void;

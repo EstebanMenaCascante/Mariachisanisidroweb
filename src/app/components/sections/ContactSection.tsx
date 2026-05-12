@@ -8,10 +8,10 @@ import {
 
 import { SectionHeading } from "../common/SectionHeading";
 import { CONTACT_PHONE_DISPLAY, socialLinks } from "../../content";
-import type { TranslationKey } from "../../i18n";
+import type { SiteCopyKey } from "../../siteCopy";
 
 type ContactSectionProps = {
-  t: (key: TranslationKey) => string;
+  t: (key: SiteCopyKey) => string;
   onWhatsApp: () => void;
 };
 
