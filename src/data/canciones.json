@@ -1127,54 +1127,6 @@
     "youtubeUrl": "https://www.youtube.com/results?search_query=Jesus+es+mi+pastor+mariachi"
   },
   {
-    "title": "La feria de las flores",
-    "tags": ["party", "valsranchero", "sentimental"],
-    "occasion": ["party"],
-    "genre": "valsranchero",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=iN_aSfGgWXo"
-  },
-  {
-    "title": "Incondicional bachata",
-    "tags": ["deception", "baladas", "sentimental"],
-    "occasion": ["deception"],
-    "genre": "baladas",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=h_fXySfFmM8"
-  },
-  {
-    "title": "Paloma querida",
-    "tags": ["party", "valsranchero", "sentimental"],
-    "occasion": ["party"],
-    "genre": "valsranchero",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=Audbd2ZxowM"
-  },
-  {
-    "title": "Yo no sé mañana (Luis Enrique)",
-    "tags": ["party", "baladas", "sentimental"],
-    "occasion": ["party"],
-    "genre": "baladas",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=2PVi95J-FMo"
-  },
-  {
-    "title": "México Lindo y Querido",
-    "tags": ["party", "rancheras", "happy"],
-    "occasion": ["party"],
-    "genre": "rancheras",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/watch?v=g9N1BUV8d40"
-  },
-  {
-    "title": "El chofer",
-    "tags": ["party", "corridos", "happy"],
-    "occasion": ["party"],
-    "genre": "corridos",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/watch?v=zih4OHAvVnM"
-  },
-  {
     "title": "Loco Javier Solís",
     "tags": ["love", "rancheras", "happy"],
     "occasion": ["love"],
