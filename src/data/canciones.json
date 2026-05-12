@@ -1,146 +1,26 @@
 [
   {
-    "title": "Cielito Lindo",
-    "tags": ["romantic", "party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Cielito+Lindo+mariachi"
-  },
-  {
-    "title": "Las Mañanitas",
-    "tags": ["birthday"],
-    "occasion": "birthday",
-    "genre": "traditional",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Las+Maanitas+mariachi"
-  },
-  {
-    "title": "Bésame Mucho",
-    "tags": ["romantic", "wedding"],
-    "occasion": "wedding",
-    "genre": "boleros",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Besame+Mucho+mariachi"
-  },
-  {
-    "title": "El Rey",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "party",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=El+Rey+mariachi"
-  },
-  {
-    "title": "La Bamba",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "cumbias",
-    "mood": "party",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=La+Bamba+mariachi"
-  },
-  {
-    "title": "Amor Eterno",
-    "tags": ["romantic"],
+    "title": "Eres tú mocedades",
+    "tags": ["mama", "baladas", "sentimental"],
     "occasion": "mama",
-    "genre": "romantic",
+    "genre": "baladas",
     "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Amor+Eterno+mariachi"
+    "youtubeUrl": "https://www.youtube.com/watch?v=7xLHpT3rMyQ"
   },
   {
-    "title": "Si Nos Dejan",
-    "tags": ["romantic", "wedding"],
-    "occasion": "wedding",
-    "genre": "romantic",
+    "title": "Motivos",
+    "tags": ["mama", "baladas", "sentimental"],
+    "occasion": "mama",
+    "genre": "baladas",
     "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Si+Nos+Dejan+mariachi"
+    "youtubeUrl": "https://www.youtube.com/watch?v=MVOYcCrS_Bw"
   },
   {
-    "title": "Volver Volver",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Volver+Volver+mariachi"
-  },
-  {
-    "title": "Hermoso Cariño",
-    "tags": ["romantic", "proposal"],
-    "occasion": "proposal",
-    "genre": "romantic",
+    "title": "Deja que salga la luna",
+    "tags": ["mama", "vals", "sentimental"],
+    "occasion": "mama",
+    "genre": "vals",
     "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Hermoso+Carino+mariachi"
-  },
-  {
-    "title": "México Lindo y Querido",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Mexico+Lindo+y+Querido+mariachi"
-  },
-  {
-    "title": "Cucurrucucú Paloma",
-    "tags": ["romantic"],
-    "occasion": "wedding",
-    "genre": "boleros",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Cucurrucucu+Paloma+mariachi"
-  },
-  {
-    "title": "La Bikina",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "party",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=La+Bikina+mariachi"
-  },
-  {
-    "title": "Te Quiero Dijiste",
-    "tags": ["romantic", "proposal"],
-    "occasion": "proposal",
-    "genre": "boleros",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Te+Quiero+Dijiste+mariachi"
-  },
-  {
-    "title": "El Mariachi Loco",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "corridos",
-    "mood": "party",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=El+Mariachi+Loco+mariachi"
-  },
-  {
-    "title": "Contigo Aprendí",
-    "tags": ["romantic", "wedding"],
-    "occasion": "wedding",
-    "genre": "romantic",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Contigo+Aprendi+mariachi"
-  },
-  {
-    "title": "Adiós Mi Chaparrita",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "cumbias",
-    "mood": "happy",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Adios+Mi+Chaparrita+mariachi"
-  },
-  {
-    "title": "El Son de la Negra",
-    "tags": ["party"],
-    "occasion": "party",
-    "genre": "rancheras",
-    "mood": "party",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=El+Son+de+la+Negra+mariachi"
-  },
-  {
-    "title": "Sabes una Cosa",
-    "tags": ["romantic"],
-    "occasion": "wedding",
-    "genre": "romantic",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/results?search_query=Sabes+una+Cosa+mariachi"
+    "youtubeUrl": "https://www.youtube.com/watch?v=ImYjWR_dg84"
   }
 ]
