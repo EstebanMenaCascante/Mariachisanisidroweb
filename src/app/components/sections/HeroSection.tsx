@@ -13,7 +13,7 @@ export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center"
+      className="relative min-h-[88svh] flex items-center justify-center"
     >
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
@@ -23,30 +23,30 @@ export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        <h1 className="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-20">
+        <h1 className="font-['Playfair_Display'] text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
           {t("hero.headline")}
         </h1>
-        <p className="text-xl sm:text-2xl text-[#D4AF37] mb-12">
+        <p className="text-lg sm:text-2xl text-[#D4AF37] mb-8 sm:mb-12">
           {t("hero.subtitle")}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center">
           <button
             onClick={onQuote}
-            className="bg-[#D4AF37] hover:bg-[#FFD700] text-black px-8 py-4 rounded-full flex items-center gap-3 transition-all transform hover:scale-105 shadow-lg"
+            className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#FFD700] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg"
           >
             <Calendar className="w-5 h-5" />
             <span className="font-medium">{t("hero.cta.quote")}</span>
           </button>
           <button
             onClick={onWhatsApp}
-            className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-4 rounded-full flex items-center gap-3 transition-all transform hover:scale-105 shadow-lg"
+            className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg"
           >
             <MessageCircle className="w-5 h-5" />
             <span className="font-medium">{t("hero.cta.whatsapp")}</span>
           </button>
         </div>
-        <div className="mt-16 flex justify-center gap-2">
+        <div className="mt-10 sm:mt-16 flex justify-center gap-2">
           {[0, 1, 2].map((index) => (
             <div
               key={index}

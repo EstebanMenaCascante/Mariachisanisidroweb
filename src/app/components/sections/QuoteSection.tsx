@@ -26,15 +26,15 @@ export function QuoteSection({
   return (
     <section
       id="cotizar"
-      className="py-20 bg-gradient-to-b from-gray-50 to-white"
+      className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title={t("quote.title")}
           subtitle={t("quote.subtitle")}
         />
-        <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-          <form onSubmit={onSubmit} className="space-y-6">
+        <div className="bg-white rounded-2xl shadow-xl p-5 sm:p-8 border border-gray-100">
+          <form onSubmit={onSubmit} className="space-y-5 sm:space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 {t("quote.name")} *
@@ -65,7 +65,7 @@ export function QuoteSection({
                 className={inputClassName}
               />
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t("quote.date")} *
@@ -81,7 +81,7 @@ export function QuoteSection({
                   className={inputClassName}
                 />
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {t("quote.time")} *

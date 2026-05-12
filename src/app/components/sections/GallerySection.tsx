@@ -19,33 +19,35 @@ export function GallerySection({
   setLightbox,
 }: GallerySectionProps) {
   return (
-    <section id="galeria" className="py-20 bg-white">
+    <section id="galeria" className="py-16 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title={t("gallery.title")}
           subtitle={t("gallery.subtitle")}
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {gallery.map((item, index) => (
             <div
               key={item.title}
               onClick={() => setLightbox(index)}
-              className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-lg hover:shadow-2xl transition-all"
+              className="relative aspect-[4/5] sm:aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-lg hover:shadow-2xl transition-all"
             >
               <ImageWithFallback
                 src={item.url}
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white font-medium">{item.title}</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
+                  <p className="text-white text-xs sm:text-base font-medium leading-tight">
+                    {item.title}
+                  </p>
                 </div>
               </div>
               {item.type === "video" && (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-[#D4AF37]/90 rounded-full flex items-center justify-center group-hover:bg-[#FFD700] transition-colors">
-                    <Play className="w-8 h-8 text-black ml-1" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#D4AF37]/90 rounded-full flex items-center justify-center group-hover:bg-[#FFD700] transition-colors">
+                    <Play className="w-6 h-6 sm:w-8 sm:h-8 text-black ml-1" />
                   </div>
                 </div>
               )}
@@ -63,7 +65,7 @@ export function GallerySection({
             className="absolute top-4 right-4 text-white hover:text-[#D4AF37] transition-colors"
             onClick={() => setLightbox(null)}
           >
-            <X className="w-8 h-8" />
+            <X className="w-7 h-7 sm:w-8 sm:h-8" />
           </button>
           <div
             className="max-w-5xl max-h-[90vh] w-full"
@@ -74,7 +76,7 @@ export function GallerySection({
               alt={gallery[lightbox].title}
               className="w-full h-full object-contain"
             />
-            <p className="text-white text-center mt-4 text-lg">
+            <p className="text-white text-center mt-4 text-base sm:text-lg">
               {gallery[lightbox].title}
             </p>
           </div>
