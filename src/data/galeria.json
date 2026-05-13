@@ -1,32 +1,37 @@
 [
   {
     "type": "image",
-    "url": "/images/galeria/presentacion-tradicional.jpg",
-    "title": "Presentación tradicional"
+    "url": "/Mariachisanisidroweb/images/galeria/Hotel-AltaGracia-Cien-Fuegos.jpg",
+    "title": "Hotel AltaGracia - Cien Fuegos"
   },
   {
     "type": "image",
-    "url": "/images/galeria/presentacion-en-vivo.jpg",
-    "title": "Presentación en vivo"
+    "url": "/Mariachisanisidroweb/images/galeria/Hotel-AltaGracia-Presentacion.jpg",
+    "title": "Hotel AltaGracia - Presentación"
+  },
+  {
+    "type": "image",
+    "url": "/Mariachisanisidroweb/images/galeria/Hotel-AltaGracia.jpg",
+    "title": "Hotel AltaGracia"
+  },
+  {
+    "type": "image",
+    "url": "/Mariachisanisidroweb/images/galeria/Presentacion-Peñas-Blancas.jpg",
+    "title": "Presentación - Peñas Blancas"
+  },
+  {
+    "type": "image",
+    "url": "/Mariachisanisidroweb/images/galeria/Presentacion-San-Miguel.jpg",
+    "title": "Presentación - San Miguel"
+  },
+  {
+    "type": "image",
+    "url": "/Mariachisanisidroweb/images/galeria/Traje-Negro.jpg",
+    "title": "Traje negro"
   },
   {
     "type": "video",
-    "url": "/videos/video-del-grupo.mp4",
-    "title": "Video del grupo"
-  },
-  {
-    "type": "image",
-    "url": "/images/galeria/boda-especial.jpg",
-    "title": "Boda especial"
-  },
-  {
-    "type": "image",
-    "url": "/images/galeria/detalle-de-guitarra.jpg",
-    "title": "Detalle de guitarra"
-  },
-  {
-    "type": "video",
-    "url": "/videos/video-en-serenata.mp4",
-    "title": "Video en serenata"
+    "url": "/Mariachisanisidroweb/videos/Solo-Sabor-a-Mi.mp4",
+    "title": "Solo Sabor a Mi"
   }
 ]

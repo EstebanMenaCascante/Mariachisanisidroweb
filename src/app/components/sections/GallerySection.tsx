@@ -18,6 +18,15 @@ export function GallerySection({
   lightbox,
   setLightbox,
 }: GallerySectionProps) {
+  const resolveWithBase = (url?: string | null) => {
+    if (!url || typeof url !== "string") return url;
+    const base = (import.meta as any)?.env?.BASE_URL ?? "/";
+    if (url.startsWith("/")) {
+      const trimmed = url.replace(/^\/+/, "");
+      return `${base}${trimmed}`;
+    }
+    return url;
+  };
   return (
     <section id="galeria" className="py-16 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,11 +41,21 @@ export function GallerySection({
               onClick={() => setLightbox(index)}
               className="relative aspect-[4/5] sm:aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-lg hover:shadow-2xl transition-all"
             >
-              <ImageWithFallback
-                src={item.url}
-                alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
+              {item.type === "image" ? (
+                <ImageWithFallback
+                  src={item.url}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              ) : (
+                <video
+                  src={encodeURI(resolveWithBase(item.url) ?? "")}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  muted
+                  playsInline
+                  loop
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
                   <p className="text-white text-xs sm:text-base font-medium leading-tight">
@@ -71,11 +90,20 @@ export function GallerySection({
             className="max-w-5xl max-h-[90vh] w-full"
             onClick={(event) => event.stopPropagation()}
           >
-            <ImageWithFallback
-              src={gallery[lightbox].url}
-              alt={gallery[lightbox].title}
-              className="w-full h-full object-contain"
-            />
+            {gallery[lightbox].type === "image" ? (
+              <ImageWithFallback
+                src={gallery[lightbox].url}
+                alt={gallery[lightbox].title}
+                className="w-full h-full object-contain"
+              />
+            ) : (
+              <video
+                src={encodeURI(resolveWithBase(gallery[lightbox].url) ?? "")}
+                className="w-full h-full object-contain"
+                controls
+                autoPlay
+              />
+            )}
             <p className="text-white text-center mt-4 text-base sm:text-lg">
               {gallery[lightbox].title}
             </p>

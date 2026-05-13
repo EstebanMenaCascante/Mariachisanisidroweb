@@ -12,6 +12,18 @@ export function ImageWithFallback(props: ImgHTMLAttributes<HTMLImageElement>) {
 
   const { src, alt, style, className, ...rest } = props;
 
+  const resolveWithBase = (url?: string | null) => {
+    if (!url || typeof url !== "string") return url;
+    const base = (import.meta as any)?.env?.BASE_URL ?? "/";
+    if (url.startsWith("/")) {
+      const trimmed = url.replace(/^\/+/, "");
+      return encodeURI(`${base}${trimmed}`);
+    }
+    return encodeURI(url);
+  };
+
+  const resolvedSrc = resolveWithBase(src as string | undefined);
+
   return didError ? (
     <div
       className={`inline-block bg-gray-100 text-center align-middle ${className ?? ""}`}
@@ -22,13 +34,15 @@ export function ImageWithFallback(props: ImgHTMLAttributes<HTMLImageElement>) {
           src={ERROR_IMG_SRC}
           alt="Error loading image"
           {...rest}
-          data-original-url={src}
+          data-original-url={
+            typeof resolvedSrc === "string" ? resolvedSrc : undefined
+          }
         />
       </div>
     </div>
   ) : (
     <img
-      src={src}
+      src={resolvedSrc as string}
       alt={alt}
       className={className}
       style={style}

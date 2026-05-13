@@ -2,31 +2,31 @@
   {
     "name": "Andrés Mora",
     "instrument": "Vihuela",
-    "image": "/images/integrantes/andres-mora.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/andres-mora.jpg"
   },
   {
     "name": "Gustavo Blanco",
     "instrument": "Guitarrón",
-    "image": "/images/integrantes/gustavo-blanco.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/gustavo-blanco.jpg"
   },
   {
     "name": "Cristian Hidalgo",
     "instrument": "Guitarra",
-    "image": "/images/integrantes/cristian-hidalgo.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/cristian-hidalgo.jpg"
   },
   {
     "name": "Gerardo Barrantes",
     "instrument": "Acordeón",
-    "image": "/images/integrantes/gerardo-barrantes.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/gerardo-barrantes.jpg"
   },
   {
     "name": "Esteban Mena",
     "instrument": "Trompeta",
-    "image": "/images/integrantes/EstebanMena.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/esteban-mena.jpg"
   },
   {
     "name": "Sebastian Monge",
     "instrument": "Trompeta",
-    "image": "/images/integrantes/sebastian-monge.jpg"
+    "image": "/Mariachisanisidroweb/images/integrantes/sebastian-monge.jpg"
   }
 ]
