@@ -8,6 +8,22 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=7xLHpT3rMyQ"
   },
   {
+    "title": "Motivos",
+    "tags": ["mama", "wedding", "baladas", "sentimental"],
+    "occasion": ["mama", "wedding"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=MVOYcCrS_Bw"
+  },
+  {
+    "title": "Deja que salga la luna",
+    "tags": ["mama", "valsranchero", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ImYjWR_dg84"
+  },
+  {
     "title": "Un clavel para mi madre",
     "tags": ["mama", "rancheras", "happy"],
     "occasion": ["mama"],
