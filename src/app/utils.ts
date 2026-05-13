@@ -59,19 +59,26 @@ export function buildQuoteMessage(form: QuoteFormValues) {
   ].join("\n");
 }
 
+function removeAccents(str: string): string {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 export function filterSongs(
   songs: Song[],
   search: string,
   activeFilter: string | null,
 ) {
-  const normalizedSearch = search.trim().toLowerCase();
+  const normalizedSearch = removeAccents(search.trim());
 
   return songs.filter((song) => {
     const songOccasions = Array.isArray(song.occasion)
       ? song.occasion
       : [song.occasion];
     const matchSearch =
-      !normalizedSearch || song.title.toLowerCase().includes(normalizedSearch);
+      !normalizedSearch || removeAccents(song.title).includes(normalizedSearch);
     const matchFilter =
       !activeFilter ||
       songOccasions.includes(activeFilter) ||

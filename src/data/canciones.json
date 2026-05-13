@@ -1119,7 +1119,7 @@
     "youtubeUrl": "https://www.youtube.com/results?search_query=Alabare+religiosa+mariachi"
   },
   {
-    "title": "Jesús es mi pastor",
+    "title": "Jesus es mi pastor",
     "tags": ["religious", "sentimental"],
     "occasion": ["religious"],
     "genre": "religious",
@@ -1133,5 +1133,13 @@
     "genre": "rancheras",
     "mood": "happy",
     "youtubeUrl": "https://www.youtube.com/watch?v=vLm53coTOsk"
+  },
+  {
+    "title": "Sabes una Cosa",
+    "tags": ["wedding", "love", "romantic", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "romantic",
+    "mood": "sentimental",
+    "youtubeUrl": "https://youtu.be/UuGrc3vvdMw?si=qj1pvRCQs-yX2xNC"
   }
 ]
