@@ -95,6 +95,11 @@ const siteCopy = {
     gallery: {
       title: "Galería",
       subtitle: "Momentos especiales capturados",
+      all: "Todos",
+      images: "Fotos",
+      videos: "Videos",
+      viewAll: "Ver galería completa",
+      noResults: "No se encontraron elementos",
     },
     quote: {
       title: "Cotizar Evento",
@@ -239,6 +244,11 @@ const siteCopy = {
     gallery: {
       title: "Gallery",
       subtitle: "Special moments captured",
+      all: "All",
+      images: "Photos",
+      videos: "Videos",
+      viewAll: "View full gallery",
+      noResults: "No items found",
     },
     quote: {
       title: "Get a Quote",

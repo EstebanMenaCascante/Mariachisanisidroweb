@@ -12,17 +12,7 @@ export function ImageWithFallback(props: ImgHTMLAttributes<HTMLImageElement>) {
 
   const { src, alt, style, className, ...rest } = props;
 
-  const resolveWithBase = (url?: string | null) => {
-    if (!url || typeof url !== "string") return url;
-    const base = (import.meta as any)?.env?.BASE_URL ?? "/";
-    if (url.startsWith("/")) {
-      const trimmed = url.replace(/^\/+/, "");
-      return encodeURI(`${base}${trimmed}`);
-    }
-    return encodeURI(url);
-  };
-
-  const resolvedSrc = resolveWithBase(src as string | undefined);
+  const resolvedSrc = typeof src === "string" && src ? encodeURI(src) : src;
 
   return didError ? (
     <div

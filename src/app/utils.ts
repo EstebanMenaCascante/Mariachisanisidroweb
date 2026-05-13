@@ -40,6 +40,11 @@ export function createRepertoirePath(
   return queryString ? `${path}?${queryString}` : path;
 }
 
+export function createGalleryPath(path: string = "galeria") {
+  const base = import.meta.env.BASE_URL || "/";
+  return `${base}${path}`;
+}
+
 export function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }
