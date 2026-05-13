@@ -1141,5 +1141,45 @@
     "genre": "romantic",
     "mood": "sentimental",
     "youtubeUrl": "https://youtu.be/UuGrc3vvdMw?si=qj1pvRCQs-yX2xNC"
+  },
+  {
+    "title": "Niña Hechicera",
+    "tags": ["love", "party", "rancheras", "happy"],
+    "occasion": ["love", "party"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://youtu.be/eGKG4A1O1CY?si=7aQXPPcddk3aeU-m"
+  },
+  {
+    "title": "El Tiempo No Perdona",
+    "tags": ["papa", "rancheras", "sentimental"],
+    "occasion": ["papa"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://youtu.be/VX1dtGJBwko?si=RiOf94wlGJpisGS3"
+  },
+  {
+    "title": "Talento De Televisión",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://youtu.be/TyNe7VomtQk?si=R6VPXM1UWVcVagy5"
+  },
+  {
+    "title": "No Crezcas Mas",
+    "tags": ["quinceanera", "baladas", "sentimental"],
+    "occasion": ["quinceanera"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://youtu.be/BDwEyfgClF4?si=UBvuA6JI1srC5Dtq"
+  },
+  {
+    "title": "Princesas Mágicas",
+    "tags": ["quinceanera", "baladas", "sentimental"],
+    "occasion": ["quinceanera"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://youtu.be/Zt1rXzYidso?si=R6l50zYKq4cUeV6Q"
   }
 ]

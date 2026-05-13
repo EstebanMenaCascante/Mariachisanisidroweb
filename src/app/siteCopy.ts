@@ -48,7 +48,7 @@ const siteCopy = {
     },
     repertoire: {
       title: "Nuestro Repertorio",
-      subtitle: "Más de 300 canciones para tu evento especial",
+      subtitle: "Más de 200 canciones para tu evento especial",
       search: "Buscar canción...",
       more: "Más",
       less: "Menos",
@@ -79,6 +79,7 @@ const siteCopy = {
         boleros: "Boleros",
         sones: "Sones",
         valsranchero: "Valses Rancheros",
+        baladas: "Baladas",
       },
       mood: {
         happy: "Alegre",
@@ -194,7 +195,7 @@ const siteCopy = {
     },
     repertoire: {
       title: "Our Repertoire",
-      subtitle: "Over 300 songs for your special event",
+      subtitle: "Over 200 songs for your special event",
       search: "Search song...",
       more: "More",
       less: "Less",
@@ -225,6 +226,7 @@ const siteCopy = {
         boleros: "Boleros",
         sones: "Sones",
         valsranchero: "Valses Rancheros",
+        baladas: "Baladas",
       },
       mood: {
         happy: "Happy",

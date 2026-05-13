@@ -110,7 +110,13 @@ export function RepertoireSection({
               type="text"
               placeholder={t("repertoire.search")}
               value={search}
-              onChange={(event) => setSearch(event.target.value)}
+              onChange={(event) => {
+                const next = event.target.value;
+                setSearch(next);
+                if (next.trim() !== "") {
+                  setActiveFilter(null);
+                }
+              }}
               className={inputClassName}
             />
           </div>
