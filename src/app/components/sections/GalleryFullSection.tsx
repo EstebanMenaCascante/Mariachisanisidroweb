@@ -126,23 +126,25 @@ export function GalleryFullSection({ t, gallery }: GalleryFullSectionProps) {
             <X className="w-7 h-7 sm:w-8 sm:h-8" />
           </button>
           <div
-            className="max-w-5xl max-h-[90vh] w-full"
+            className="flex max-h-[calc(100vh-2rem)] w-full max-w-6xl flex-col gap-4 overflow-hidden"
             onClick={(event) => event.stopPropagation()}
           >
-            {gallery[lightbox].type === "image" ? (
-              <ImageWithFallback
-                src={gallery[lightbox].url}
-                alt={gallery[lightbox].title}
-                className="w-full h-full object-contain"
-              />
-            ) : (
-              <video
-                src={encodeURI(gallery[lightbox].url)}
-                className="w-full h-full object-contain"
-                controls
-                autoPlay
-              />
-            )}
+            <div className="flex min-h-0 flex-1 items-center justify-center">
+              {gallery[lightbox].type === "image" ? (
+                <ImageWithFallback
+                  src={gallery[lightbox].url}
+                  alt={gallery[lightbox].title}
+                  className="max-h-[calc(100vh-10rem)] w-auto max-w-full object-contain"
+                />
+              ) : (
+                <video
+                  src={encodeURI(gallery[lightbox].url)}
+                  className="max-h-[calc(100vh-10rem)] w-auto max-w-full object-contain"
+                  controls
+                  autoPlay
+                />
+              )}
+            </div>
             <p className="text-white text-center mt-4 text-base sm:text-lg">
               {gallery[lightbox].title}
             </p>
