@@ -21,7 +21,7 @@ const REPERTORY_ADMIN_PASSWORD = "sanisidro26";
 
 type SongFormState = {
   title: string;
-  occasion: string;
+  occasion: string[];
   genre: string;
   mood: string;
   youtubeUrl: string;
@@ -29,7 +29,7 @@ type SongFormState = {
 
 const emptyForm: SongFormState = {
   title: "",
-  occasion: "",
+  occasion: [],
   genre: "",
   mood: "",
   youtubeUrl: "",
@@ -41,7 +41,7 @@ const unique = (values: string[]) =>
 const normalizeSong = (song: Song): Song => ({
   title: song.title.trim(),
   tags: unique(song.tags.map((tag) => tag.trim())),
-  occasion: song.occasion.trim(),
+  occasion: unique(song.occasion.map((occasion) => occasion.trim())),
   genre: song.genre.trim(),
   mood: song.mood.trim(),
   youtubeUrl: song.youtubeUrl.trim(),
@@ -49,13 +49,13 @@ const normalizeSong = (song: Song): Song => ({
 
 const songFromForm = (form: SongFormState): Song => {
   const tags = unique(
-    [form.occasion, form.genre, form.mood].map((value) => value.trim()),
+    [...form.occasion, form.genre, form.mood].map((value) => value.trim()),
   );
 
   return {
     title: form.title.trim(),
     tags,
-    occasion: form.occasion.trim(),
+    occasion: unique(form.occasion.map((occasion) => occasion.trim())),
     genre: form.genre.trim(),
     mood: form.mood.trim(),
     youtubeUrl: form.youtubeUrl.trim(),
@@ -178,6 +178,19 @@ export function RepertoryAdminPage() {
       }
 
       return current > index ? current - 1 : current;
+    });
+  };
+
+  const handleToggleOccasion = (occasionKey: string) => {
+    setForm((current) => {
+      const hasOccasion = current.occasion.includes(occasionKey);
+
+      return {
+        ...current,
+        occasion: hasOccasion
+          ? current.occasion.filter((value) => value !== occasionKey)
+          : [...current.occasion, occasionKey],
+      };
     });
   };
 
@@ -348,28 +361,29 @@ export function RepertoryAdminPage() {
                   />
                 </label>
 
-                <label className="grid gap-2">
-                  <span className="text-sm text-gray-300">Ocasión</span>
-                  <input
-                    list="occasion-options"
-                    value={form.occasion}
-                    onChange={(event) =>
-                      setForm((current) => ({
-                        ...current,
-                        occasion: event.target.value,
-                      }))
-                    }
-                    className="rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition-colors placeholder:text-gray-500 focus:border-[#D4AF37]"
-                    placeholder="Ej. Para Mamá"
-                  />
-                  <datalist id="occasion-options">
-                    {occasionOptions.map((option) => (
-                      <option key={option} value={option}>
-                        {occasionLabels[option]}
-                      </option>
-                    ))}
-                  </datalist>
-                </label>
+                <div className="grid gap-2 md:col-span-2">
+                  <span className="text-sm text-gray-300">Ocasiones</span>
+                  <div className="flex flex-wrap gap-2">
+                    {occasionOptions.map((option) => {
+                      const selected = form.occasion.includes(option);
+
+                      return (
+                        <button
+                          key={option}
+                          type="button"
+                          onClick={() => handleToggleOccasion(option)}
+                          className={`rounded-full border px-3 py-1.5 text-xs transition-colors ${
+                            selected
+                              ? "border-[#D4AF37] bg-[#D4AF37] text-black"
+                              : "border-white/20 bg-white/5 text-gray-200 hover:bg-white/10"
+                          }`}
+                        >
+                          {occasionLabels[option]}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
 
                 <label className="grid gap-2">
                   <span className="text-sm text-gray-300">Género</span>
@@ -455,7 +469,7 @@ export function RepertoryAdminPage() {
                       })
                     ) : (
                       <span className="text-sm text-gray-400">
-                        Se calcularán a partir de ocasión, género y mood.
+                        Se calcularán a partir de ocasiones, género y mood.
                       </span>
                     )}
                   </div>
@@ -522,8 +536,13 @@ export function RepertoryAdminPage() {
                       <div>
                         <h3 className="font-medium text-white">{song.title}</h3>
                         <p className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-400">
-                          {occasionLabels[song.occasion]} ·{" "}
-                          {genreLabels[song.genre]} · {moodLabels[song.mood]}
+                          {song.occasion
+                            .map(
+                              (occasion) =>
+                                occasionLabels[occasion] || occasion,
+                            )
+                            .join(" · ")}{" "}
+                          · {genreLabels[song.genre]} · {moodLabels[song.mood]}
                         </p>
                       </div>
 

@@ -12,6 +12,8 @@ export function ImageWithFallback(props: ImgHTMLAttributes<HTMLImageElement>) {
 
   const { src, alt, style, className, ...rest } = props;
 
+  const resolvedSrc = typeof src === "string" && src ? encodeURI(src) : src;
+
   return didError ? (
     <div
       className={`inline-block bg-gray-100 text-center align-middle ${className ?? ""}`}
@@ -22,13 +24,15 @@ export function ImageWithFallback(props: ImgHTMLAttributes<HTMLImageElement>) {
           src={ERROR_IMG_SRC}
           alt="Error loading image"
           {...rest}
-          data-original-url={src}
+          data-original-url={
+            typeof resolvedSrc === "string" ? resolvedSrc : undefined
+          }
         />
       </div>
     </div>
   ) : (
     <img
-      src={src}
+      src={resolvedSrc as string}
       alt={alt}
       className={className}
       style={style}

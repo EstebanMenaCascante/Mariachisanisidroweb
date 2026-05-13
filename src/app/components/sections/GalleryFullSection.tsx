@@ -1,46 +1,76 @@
-import { Play, X, ChevronRight } from "lucide-react";
+import { Play, X } from "lucide-react";
+import { useMemo, useState } from "react";
 
 import { SectionHeading } from "../common/SectionHeading";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import type { GalleryItem } from "../../types";
 import type { SiteCopyKey } from "../../siteCopy";
 
-type GallerySectionProps = {
+type GalleryFullSectionProps = {
   t: (key: SiteCopyKey) => string;
   gallery: GalleryItem[];
-  lightbox: number | null;
-  setLightbox: (value: number | null) => void;
-  previewLimit?: number;
-  viewAllHref?: string;
 };
 
-export function GallerySection({
-  t,
-  gallery,
-  lightbox,
-  setLightbox,
-  previewLimit,
-  viewAllHref,
-}: GallerySectionProps) {
-  const visibleGallery =
-    previewLimit && gallery.length > previewLimit
-      ? gallery.slice(0, previewLimit)
-      : gallery;
+export function GalleryFullSection({ t, gallery }: GalleryFullSectionProps) {
+  const [lightbox, setLightbox] = useState<number | null>(null);
+  const [filterType, setFilterType] = useState<"all" | "image" | "video">(
+    "all",
+  );
 
-  const hasMore = previewLimit && gallery.length > previewLimit;
+  const filteredGallery = useMemo(() => {
+    if (filterType === "all") return gallery;
+    return gallery.filter((item) => item.type === filterType);
+  }, [gallery, filterType]);
+
+  const chipClassName = (value: "all" | "image" | "video") =>
+    `px-4 py-2 rounded-full text-sm transition-colors cursor-pointer ${
+      filterType === value
+        ? "bg-[#D4AF37] text-black font-semibold"
+        : "bg-gray-200 hover:bg-gray-300 text-gray-700"
+    }`;
 
   return (
-    <section id="galeria" className="py-16 sm:py-20 bg-white">
+    <section className="py-16 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title={t("gallery.title")}
           subtitle={t("gallery.subtitle")}
         />
+
+        {/* Filter chips */}
+        <div className="flex gap-3 justify-center mb-8">
+          <button
+            onClick={() => setFilterType("all")}
+            className={chipClassName("all")}
+          >
+            {t("gallery.all")}
+          </button>
+          <button
+            onClick={() => setFilterType("image")}
+            className={chipClassName("image")}
+          >
+            {t("gallery.images")}
+          </button>
+          <button
+            onClick={() => setFilterType("video")}
+            className={chipClassName("video")}
+          >
+            {t("gallery.videos")}
+          </button>
+        </div>
+
+        {/* Gallery grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-          {visibleGallery.map((item, index) => (
+          {filteredGallery.map((item, index) => (
             <div
               key={item.title}
-              onClick={() => setLightbox(index)}
+              onClick={() => {
+                // Find actual index in full gallery for lightbox
+                const actualIndex = gallery.findIndex(
+                  (g) => g.title === item.title,
+                );
+                setLightbox(actualIndex);
+              }}
               className="relative aspect-[4/5] sm:aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-lg hover:shadow-2xl transition-all"
             >
               {item.type === "image" ? (
@@ -76,20 +106,14 @@ export function GallerySection({
           ))}
         </div>
 
-        {/* View All Button */}
-        {hasMore && viewAllHref && (
-          <div className="flex justify-center mt-8 sm:mt-12">
-            <a
-              href={viewAllHref}
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#D4AF37] hover:bg-[#FFD700] text-black font-bold rounded-full transition-all hover:shadow-lg"
-            >
-              {t("gallery.viewAll")}
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-            </a>
+        {filteredGallery.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">{t("gallery.noResults")}</p>
           </div>
         )}
       </div>
 
+      {/* Lightbox */}
       {lightbox !== null && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"

@@ -4,6 +4,7 @@ import { AboutSection } from "./components/sections/AboutSection";
 import { ContactSection } from "./components/sections/ContactSection";
 import { Footer } from "./components/sections/Footer";
 import { GallerySection } from "./components/sections/GallerySection";
+import { GalleryFullPage } from "./components/sections/GalleryFullPage";
 import { Header } from "./components/layout/Header";
 import { HeroSection } from "./components/sections/HeroSection";
 import { MembersSection } from "./components/sections/MembersSection";
@@ -26,6 +27,7 @@ import {
 import {
   buildQuoteMessage,
   createRepertoirePath,
+  createGalleryPath,
   getRepertoireQueryState,
   type RepertoireQueryState,
   scrollToSection,
@@ -41,6 +43,7 @@ export default function App() {
   const isRepertoireRoute = pathname
     .replace(/\/+$/, "")
     .endsWith("/repertorio");
+  const isGalleryRoute = pathname.replace(/\/+$/, "").endsWith("/galeria");
   const repertoireQueryState: RepertoireQueryState =
     typeof window !== "undefined"
       ? getRepertoireQueryState(new URLSearchParams(window.location.search))
@@ -73,6 +76,20 @@ export default function App() {
         repertoireFilterGroups={repertoireFilterGroups}
         songs={songs}
         homeHref={createRepertoirePath("", repertoireQueryState)}
+      />
+    );
+  }
+
+  if (isGalleryRoute) {
+    return (
+      <GalleryFullPage
+        lang={lang}
+        setLang={setLang}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        t={t}
+        gallery={gallery}
+        homeHref={import.meta.env.BASE_URL || "/"}
       />
     );
   }
@@ -130,6 +147,8 @@ export default function App() {
           gallery={gallery}
           lightbox={lightbox}
           setLightbox={setLightbox}
+          previewLimit={6}
+          viewAllHref={createGalleryPath("galeria")}
         />
         <QuoteSection
           t={t}

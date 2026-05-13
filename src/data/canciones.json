@@ -8,19 +8,1122 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=7xLHpT3rMyQ"
   },
   {
-    "title": "Motivos",
-    "tags": ["mama", "baladas", "sentimental"],
-    "occasion": "mama",
-    "genre": "baladas",
-    "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=MVOYcCrS_Bw"
+    "title": "Un clavel para mi madre",
+    "tags": ["mama", "rancheras", "happy"],
+    "occasion": ["mama"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2UibrLbBWdk"
   },
   {
-    "title": "Deja que salga la luna",
-    "tags": ["mama", "vals", "sentimental"],
-    "occasion": "mama",
-    "genre": "vals",
+    "title": "A esa mujer",
+    "tags": ["mama", "valsranchero", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "valsranchero",
     "mood": "sentimental",
-    "youtubeUrl": "https://www.youtube.com/watch?v=ImYjWR_dg84"
+    "youtubeUrl": "https://www.youtube.com/watch?v=3ql5nFBfyjQ"
+  },
+  {
+    "title": "Mujeres divinas",
+    "tags": ["mama", "valsranchero", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=C2q7lB0NRBk"
+  },
+  {
+    "title": "Es la mujer",
+    "tags": ["mama", "corridos", "happy"],
+    "occasion": ["mama"],
+    "genre": "corridos",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ExIYBs63Bwg"
+  },
+  {
+    "title": "Ella",
+    "tags": ["mama", "valsranchero", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=JOHnirPuR7I"
+  },
+  {
+    "title": "A mi madre (Dimas)",
+    "tags": ["mama", "corridos", "happy"],
+    "occasion": ["mama"],
+    "genre": "corridos",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=G793MxEtbkM"
+  },
+  {
+    "title": "Tú sangre en mi cuerpo",
+    "tags": [
+      "mama",
+      "papa",
+      "quinceanos",
+      "quinceanera",
+      "baladas",
+      "sentimental"
+    ],
+    "occasion": ["mama", "papa", "quinceanos", "quinceanera"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=JuUt0Ej3B2Y"
+  },
+  {
+    "title": "gema",
+    "tags": ["mama", "boleros", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Gema+mariachi"
+  },
+  {
+    "title": "Madrecita Querida",
+    "tags": ["mama", "rancheras", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Madrecita+Querida+mariachi"
+  },
+  {
+    "title": "Señora, Señora",
+    "tags": ["mama", "rancheras", "sentimental"],
+    "occasion": ["mama"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Señora+Señora+mariachi"
+  },
+  {
+    "title": "El rey",
+    "tags": ["papa", "rancheras", "happy"],
+    "occasion": ["papa"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NJr6rE_G-1Q"
+  },
+  {
+    "title": "Mi padre",
+    "tags": ["papa", "rancheras", "sentimental"],
+    "occasion": ["papa"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mi+padre+Mariachi+Vargas"
+  },
+  {
+    "title": "No me se rajar",
+    "tags": ["papa", "rancheras", "happy"],
+    "occasion": ["papa"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=No+me+se+rajar+Vicente+Fernandez"
+  },
+  {
+    "title": "Mi viejo",
+    "tags": ["papa", "valsranchero", "sentimental"],
+    "occasion": ["papa"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mi+viejo+Vicente+Fernandez"
+  },
+  {
+    "title": "Amigo",
+    "tags": ["papa", "baladas", "sentimental"],
+    "occasion": ["papa"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2DWDP1dCc2w"
+  },
+  {
+    "title": "A mi manera",
+    "tags": ["papa", "boleros", "sentimental"],
+    "occasion": ["papa"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=A+mi+manera+Vicente+Fernandez"
+  },
+  {
+    "title": "Mil horas",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=P9TF7vXr-DI"
+  },
+  {
+    "title": "El son de la negra",
+    "tags": ["party", "rancheras", "happy"],
+    "occasion": ["party"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=wRAqM1K-2cY"
+  },
+  {
+    "title": "Mas que tu amigo",
+    "tags": ["romantic", "cumbias", "sentimental"],
+    "occasion": ["romantic"],
+    "genre": "cumbias",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mas+que+tu+amigo+Marco+Antonio+Solis"
+  },
+  {
+    "title": "Perfume de gardenias",
+    "tags": ["romantic", "boleros", "sentimental"],
+    "occasion": ["romantic"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Perfume+de+gardenias+mariachi"
+  },
+  {
+    "title": "Popurrí de cumbias",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Popurri+cumbias+mariachi"
+  },
+  {
+    "title": "Mariachi loco",
+    "tags": ["party", "rancheras", "happy"],
+    "occasion": ["party"],
+    "genre": "rancheras",
+    "mood": "party",
+    "youtubeUrl": "https://www.youtube.com/watch?v=X0gPIiMkbCw"
+  },
+  {
+    "title": "Volver volver",
+    "tags": ["party", "rancheras", "happy"],
+    "occasion": ["party"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Volver+volver+mariachi"
+  },
+  {
+    "title": "Cómo te voy a olvidar",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Como+te+voy+a+olvidar+Los+Angeles+Azules"
+  },
+  {
+    "title": "Tiene Espinas el Rosal",
+    "tags": ["romantic", "cumbias", "happy"],
+    "occasion": ["romantic"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Tiene+Espinas+el+Rosal+mariachi"
+  },
+  {
+    "title": "Oye mi lola",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Oye+mi+lola+La+Sonora+Dinamita"
+  },
+  {
+    "title": "Mosaico Chiqui Chiqui",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mosaico+Chiqui+Chiqui+mariachi"
+  },
+  {
+    "title": "El aventurero",
+    "tags": ["party", "corridos", "happy"],
+    "occasion": ["party"],
+    "genre": "corridos",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+aventurero+Pedro+Fernandez"
+  },
+  {
+    "title": "Yo no fui",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Yo+no+fui+Pedro+Fernandez"
+  },
+  {
+    "title": "La puerta negra",
+    "tags": ["party", "corridos", "happy"],
+    "occasion": ["party"],
+    "genre": "corridos",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+puerta+negra+Los+Tigres+Del+Norte"
+  },
+  {
+    "title": "Que nadie sepa mi sufrir",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Que+nadie+sepa+mi+sufrir+Sonora+dinamita"
+  },
+  {
+    "title": "El año viejo",
+    "tags": ["party", "cumbias", "happy"],
+    "occasion": ["party"],
+    "genre": "cumbias",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+ano+viejo+mariachi"
+  },
+  {
+    "title": "El ausente",
+    "tags": ["romantic", "corridos", "happy"],
+    "occasion": ["romantic"],
+    "genre": "corridos",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+ausente+Antonio+Aguilar"
+  },
+  {
+    "title": "La Bikina",
+    "tags": ["party", "rancheras", "happy"],
+    "occasion": ["party"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=F7h4gXLFXfg"
+  },
+  {
+    "title": "Las mañanitas",
+    "tags": ["birthday", "quinceanera", "rancheras", "happy"],
+    "occasion": ["birthday", "quinceanera"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Las+Manitas+Alejandro+Fernandez"
+  },
+  {
+    "title": "Si nos dejan",
+    "tags": ["wedding", "love", "baladas", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5v32EYh5bkI"
+  },
+  {
+    "title": "Contigo aprendí",
+    "tags": ["wedding", "love", "baladas", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Contigo+aprendi+Alejandro+Fernandez"
+  },
+  {
+    "title": "Entrega total",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Entrega+total+Javier+Solis"
+  },
+  {
+    "title": "Tres regalos",
+    "tags": ["wedding", "love", "boleros", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Tres+regalos+Carlos+Cuevas"
+  },
+  {
+    "title": "La venia bendita",
+    "tags": ["love", "rancheras", "sentimental"],
+    "occasion": ["love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+venia+bendita+Marco+Antonio+Solis"
+  },
+  {
+    "title": "Millón de primaveras",
+    "tags": ["wedding", "rancheras", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Millon+de+primaveras+Vicente+Fernandez"
+  },
+  {
+    "title": "Novia mía",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Novia+mia+mariachi"
+  },
+  {
+    "title": "Esa chiquilla",
+    "tags": ["romantic", "love", "wedding", "boleros", "sentimental"],
+    "occasion": ["romantic", "love", "wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Esa+chiquilla+mariachi"
+  },
+  {
+    "title": "Prometo",
+    "tags": ["wedding", "love", "baladas", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Prometo+Fonseca+Mariachi+Vargas"
+  },
+  {
+    "title": "Solamente una vez",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Solamente+una+vez+mariachi"
+  },
+  {
+    "title": "Me gustas",
+    "tags": ["romantic", "love", "corridos", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Me+gustas+Joan+Sebastian"
+  },
+  {
+    "title": "El color de tus ojos",
+    "tags": ["romantic", "wedding", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "wedding", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+color+de+tus+ojos+Banda+MS"
+  },
+  {
+    "title": "La feria de las flores",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+feria+de+las+flores+mariachi"
+  },
+  {
+    "title": "Incondicional",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Incondicional+Prince+Royce"
+  },
+  {
+    "title": "Paloma querida",
+    "tags": ["romantic", "boleros", "sentimental"],
+    "occasion": ["romantic"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Paloma+querida+Vicente+Fernandez"
+  },
+  {
+    "title": "Yo no sé mañana",
+    "tags": ["romantic", "boleros", "sentimental"],
+    "occasion": ["romantic"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Yo+no+se+manana+Luis+Enrique"
+  },
+  {
+    "title": "México Lindo y Querido",
+    "tags": ["party", "rancheras", "happy"],
+    "occasion": ["party"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mexico+Lindo+y+Querido+mariachi"
+  },
+  {
+    "title": "El chofer",
+    "tags": ["romantic", "boleros", "sentimental"],
+    "occasion": ["romantic"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+chofer+Vicente+Fernandez"
+  },
+  {
+    "title": "Somos novios",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Somos+novios+mariachi"
+  },
+  {
+    "title": "Qué bonito amor",
+    "tags": ["wedding", "love", "valsranchero", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Que+bonito+amor+Vicente+Fernandez"
+  },
+  {
+    "title": "Diséñame",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Diseñame+Joan+Sebastian"
+  },
+  {
+    "title": "Hasta mi final",
+    "tags": ["wedding", "baladas", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Hasta+mi+final+Mariachi+Alma+Virgen"
+  },
+  {
+    "title": "Sabor a Mi",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Sabor+a+Mi+mariachi"
+  },
+  {
+    "title": "La Gloria eres Tu",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+gloria+eres+tu+mariachi"
+  },
+  {
+    "title": "Por Amor",
+    "tags": ["wedding", "love", "rancheras", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Por+amor+mariachi"
+  },
+  {
+    "title": "Debajo del sombrero",
+    "tags": ["wedding", "love", "rancheras", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Debajo+del+sombrero+Pedro+Fernandez"
+  },
+  {
+    "title": "Amarte a la antigua",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Amarte+a+la+antigua+Pedro+Fernandez"
+  },
+  {
+    "title": "Las llaves de mi alma",
+    "tags": ["romantic", "love", "valsranchero", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Las+llaves+de+mi+alma+mariachi"
+  },
+  {
+    "title": "Cielito lindo",
+    "tags": ["romantic", "love", "rancheras", "happy"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3pJ1lqqMRbU"
+  },
+  {
+    "title": "Serenata huasteca",
+    "tags": ["romantic", "love", "sones", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "sones",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Serenata+huasteca+mariachi"
+  },
+  {
+    "title": "Me encantas",
+    "tags": ["romantic", "love", "cumbias", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "cumbias",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Me+encantas+Pedro+Fernandez"
+  },
+  {
+    "title": "Le hace falta un beso",
+    "tags": ["romantic", "love", "corridos", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Le+hace+falta+un+beso+El+Chapo"
+  },
+  {
+    "title": "La ley del monte",
+    "tags": ["romantic", "love", "rancheras", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+ley+del+monte+Vicente+Fernandez"
+  },
+  {
+    "title": "Como han pasado los años",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Como+han+pasado+los+años+Mariachi+Vargas"
+  },
+  {
+    "title": "Esclavo y amo",
+    "tags": ["romantic", "love", "valsranchero", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Esclavo+y+amo+Javier+Solis"
+  },
+  {
+    "title": "Necesito de ti",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Necesito+de+ti+Vicente+Fernandez"
+  },
+  {
+    "title": "Loco Alejandro Fernández",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Loco+Alejandro+Fernandez"
+  },
+  {
+    "title": "Si Dios me quita la vida",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Si+Dios+me+quita+la+vida+Javier+Solis"
+  },
+  {
+    "title": "Qué de raro tiene",
+    "tags": ["romantic", "love", "valsranchero", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "valsranchero",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Que+de+raro+tiene+Vicente+Fernandez"
+  },
+  {
+    "title": "Nos estorbo la ropa",
+    "tags": ["romantic", "love", "rancheras", "party"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "party",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Nos+estorbo+la+ropa+Vicente+Fernandez"
+  },
+  {
+    "title": "No hay cielo",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=No+hay+cielo+franco+de+vita"
+  },
+  {
+    "title": "Amémonos",
+    "tags": ["romantic", "love", "boleros", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Amonos+Lucha+Villa"
+  },
+  {
+    "title": "Entre el amor y yo",
+    "tags": ["romantic", "love", "rancheras", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Entre+el+amor+y+yo+Vicente+Fernandez"
+  },
+  {
+    "title": "El ayudante",
+    "tags": ["romantic", "love", "rancheras", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+ayudante+Vicente+Fernandez"
+  },
+  {
+    "title": "La malagueña",
+    "tags": ["romantic", "love", "sones", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "sones",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+malagueña+mariachi"
+  },
+  {
+    "title": "Te conquistaré",
+    "tags": ["romantic", "love", "corridos", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Voy+a+conquistarte+mariachi"
+  },
+  {
+    "title": "Querida",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Querida+Juan+Gabriel"
+  },
+  {
+    "title": "Te lo pido por favor",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Te+lo+pido+por+favor+Juan+Gabriel"
+  },
+  {
+    "title": "Todo lo que hago lo hago por ti",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Todo+lo+que+hago+lo+hago+por+ti+mariachi"
+  },
+  {
+    "title": "Es mi niña bonita",
+    "tags": ["romantic", "love", "rancheras", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Es+mi+niña+bonita+Vicente+Fernandez"
+  },
+  {
+    "title": "La mejor de todas",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+mejor+de+todas+mariachi"
+  },
+  {
+    "title": "Bésame mucho",
+    "tags": ["wedding", "boleros", "sentimental"],
+    "occasion": ["wedding"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Besame+mucho+Vicente+Fernandez"
+  },
+  {
+    "title": "Flor Pálida",
+    "tags": ["romantic", "love", "baladas", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Flor+Palida+Marc+Anthony"
+  },
+  {
+    "title": "Mi reina y mi tesoro",
+    "tags": ["romantic", "love", "rancheras", "sentimental"],
+    "occasion": ["romantic", "love"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Mi+reina+y+mi+tesoro+Mariachi+Vargas"
+  },
+  {
+    "title": "Vida",
+    "tags": ["quinceanos", "birthday", "quinceanera", "baladas", "happy"],
+    "occasion": ["quinceanos", "birthday", "quinceanera"],
+    "genre": "baladas",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Vida+Marc+Anthony"
+  },
+  {
+    "title": "Perdón",
+    "tags": ["forgiveness", "apologize", "boleros", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Perdon+mariachi"
+  },
+  {
+    "title": "El ultimo beso",
+    "tags": ["forgiveness", "apologize", "boleros", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+ultimo+beso+Vicente+Fernandez"
+  },
+  {
+    "title": "Urge",
+    "tags": ["forgiveness", "apologize", "rancheras", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Urge+Vicente+Fernandez"
+  },
+  {
+    "title": "Tú de que vas",
+    "tags": ["forgiveness", "apologize", "corridos", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Tu+de+que+vas+franco+de+vita"
+  },
+  {
+    "title": "100 años",
+    "tags": ["forgiveness", "apologize", "boleros", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=100+años+Carlos+Rivera+Maluma"
+  },
+  {
+    "title": "UN X100TO",
+    "tags": ["forgiveness", "apologize", "corridos", "sentimental"],
+    "occasion": ["forgiveness", "apologize"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=UN+X100TO+Grupo+Frontera+Bad+Bunny"
+  },
+  {
+    "title": "Caray",
+    "tags": ["sadness", "deception", "rancheras", "party"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "party",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Caray+Juan+Gabriel"
+  },
+  {
+    "title": "Tatuajes",
+    "tags": ["sadness", "deception", "baladas", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Tatuajes+Joan+Sebastian"
+  },
+  {
+    "title": "De que maneras te olvido",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=De+que+manera+te+olvido+Vicente+Fernandez"
+  },
+  {
+    "title": "Por mujeres como tu",
+    "tags": ["sadness", "deception", "rancheras", "party"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "party",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Por+mujeres+como+tu+Pepe+Aguilar"
+  },
+  {
+    "title": "Estos celos",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Estos+celos+Vicente+Fernandez"
+  },
+  {
+    "title": "Lástima que seas ajena",
+    "tags": ["sadness", "deception", "boleros", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Lastima+que+seas+ajena+Vicente+Fernandez"
+  },
+  {
+    "title": "Adorado tormento",
+    "tags": ["sadness", "deception", "boleros", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Adorado+tormento+Vicente+Fernandez"
+  },
+  {
+    "title": "Mátalas",
+    "tags": ["sadness", "deception", "rancheras", "party"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "party",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Matalas+Alejandro+Fernandez"
+  },
+  {
+    "title": "Me bebí tu recuerdo",
+    "tags": ["sadness", "deception", "baladas", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Me+bebi+tu+recuerdo+Galy+Galiano"
+  },
+  {
+    "title": "Nube viajera",
+    "tags": ["sadness", "deception", "baladas", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Nube+viajera+Alejandro+Fernandez"
+  },
+  {
+    "title": "Por tu maldito amor",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Por+tu+maldito+amor+Vicente+Fernandez"
+  },
+  {
+    "title": "Tu cárcel",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Tu+carcel+Los+Bukis"
+  },
+  {
+    "title": "Adiós amor",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Adios+amor+Christian+Nodal"
+  },
+  {
+    "title": "La mitad que me faltaba",
+    "tags": ["sadness", "deception", "boleros", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+mitad+que+me+faltaba+Alejandro+Fernandez"
+  },
+  {
+    "title": "Probablemente",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Probablemente+Christian+Nodal"
+  },
+  {
+    "title": "No te contaron mal",
+    "tags": ["sadness", "deception", "corridos", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=No+te+contaron+mal+Christian+Nodal"
+  },
+  {
+    "title": "A través del vaso",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=A+traves+del+vaso+German+Montero"
+  },
+  {
+    "title": "Llamarada",
+    "tags": ["sadness", "deception", "boleros", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Llamarada+Luis+Miguel"
+  },
+  {
+    "title": "De los besos que te di",
+    "tags": ["sadness", "deception", "corridos", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "corridos",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=De+los+besos+que+te+di+Christian+Nodal"
+  },
+  {
+    "title": "Te hubieras ido antes",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Te+hubieras+ido+antes+Mariachi+Nuevo+Tecalitlan"
+  },
+  {
+    "title": "La media vuelta",
+    "tags": ["sadness", "deception", "boleros", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "boleros",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=La+media+vuelta+Luis+Miguel"
+  },
+  {
+    "title": "Acá Entre Nos",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Aca+entre+nos+Vicente+Fernandez"
+  },
+  {
+    "title": "Como quien pierde una estrella",
+    "tags": ["sadness", "deception", "rancheras", "sentimental"],
+    "occasion": ["sadness", "deception"],
+    "genre": "rancheras",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Como+quien+pierde+una+estrella+Alejandro+Fernandez"
+  },
+  {
+    "title": "Pescador de hombres",
+    "tags": ["funeral", "religious", "funerals", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Pescador+de+hombres+mariachi"
+  },
+  {
+    "title": "Entre tus manos",
+    "tags": ["funeral", "religious", "funerals", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Entre+tus+manos+religioso"
+  },
+  {
+    "title": "Un día a la vez",
+    "tags": ["funeral", "religious", "funerals", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Un+dia+a+la+vez+Veronica+Leal"
+  },
+  {
+    "title": "Cien ovejas",
+    "tags": ["funeral", "religious", "funerals", "religiosas", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "religiosas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Cien+ovejas+mariachi"
+  },
+  {
+    "title": "Amor eterno",
+    "tags": ["funeral", "religious", "funerals", "baladas", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Amor+eterno+Rocio+Durcal"
+  },
+  {
+    "title": "Recuérdame",
+    "tags": ["funeral", "religious", "funerals", "baladas", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Recuerdame+Carlos+Rivera"
+  },
+  {
+    "title": "Por ti volaré",
+    "tags": ["funeral", "religious", "funerals", "baladas", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "baladas",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Por+ti+volare+Andrea+Bocelli"
+  },
+  {
+    "title": "María tu",
+    "tags": ["funeral", "religious", "sentimental"],
+    "occasion": ["funeral", "religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Maria+tu+Jaime+Chacua"
+  },
+  {
+    "title": "El alfarero",
+    "tags": ["funeral", "religious", "funerals", "sentimental"],
+    "occasion": ["funeral", "religious", "funerals"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+alfarero+Alex+Campos"
+  },
+  {
+    "title": "Bendita serás llamada",
+    "tags": ["funeral", "religious", "sentimental"],
+    "occasion": ["funeral", "religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Bendita+seras+llamada+mariachi"
+  },
+  {
+    "title": "El peregrino",
+    "tags": ["funeral", "religious", "sentimental"],
+    "occasion": ["funeral", "religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=El+peregrino+Ricardo+Cantalapiedra"
+  },
+  {
+    "title": "Sacerdote para siempre",
+    "tags": ["funeral", "religious", "sentimental"],
+    "occasion": ["funeral", "religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Sacerdote+para+siempre+Jesed"
+  },
+  {
+    "title": "Cuán grande es Él",
+    "tags": ["funeral", "religious", "sentimental"],
+    "occasion": ["funeral", "religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Cuan+grande+es+el+Abigail+Araujo"
+  },
+  {
+    "title": "Himno a San Isidro",
+    "tags": ["religious", "sentimental"],
+    "occasion": ["religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Himno+San+Isidro+mariachi"
+  },
+  {
+    "title": "Cerca de ti",
+    "tags": ["religious", "sentimental"],
+    "occasion": ["religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Cerca+de+ti+religiosa+mariachi"
+  },
+  {
+    "title": "Soy tu servidor",
+    "tags": ["religious", "sentimental"],
+    "occasion": ["religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Soy+tu+servidor+religiosa+mariachi"
+  },
+  {
+    "title": "Alabare",
+    "tags": ["religious", "happy"],
+    "occasion": ["religious"],
+    "genre": "religious",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Alabare+religiosa+mariachi"
+  },
+  {
+    "title": "Jesus es mi pastor",
+    "tags": ["religious", "sentimental"],
+    "occasion": ["religious"],
+    "genre": "religious",
+    "mood": "sentimental",
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Jesus+es+mi+pastor+mariachi"
+  },
+  {
+    "title": "Loco Javier Solís",
+    "tags": ["love", "rancheras", "happy"],
+    "occasion": ["love"],
+    "genre": "rancheras",
+    "mood": "happy",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vLm53coTOsk"
+  },
+  {
+    "title": "Sabes una Cosa",
+    "tags": ["wedding", "love", "romantic", "sentimental"],
+    "occasion": ["wedding", "love"],
+    "genre": "romantic",
+    "mood": "sentimental",
+    "youtubeUrl": "https://youtu.be/UuGrc3vvdMw?si=qj1pvRCQs-yX2xNC"
   }
 ]
