@@ -73,16 +73,12 @@ const siteCopy = {
         funerals: "Funerales",
       },
       genre: {
-        romantic: "Románticas",
         rancheras: "Rancheras",
         cumbias: "Cumbias",
         corridos: "Corridos",
         boleros: "Boleros",
         sones: "Sones",
-        vals: "Valses",
-        dolidas: "Dolidas",
-        religiosas: "Religiosas",
-        valsrancheros: "Valses rancheros",
+        valsranchero: "Valses Rancheros",
       },
       mood: {
         happy: "Alegre",
