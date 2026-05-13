@@ -22,7 +22,7 @@ const siteCopy = {
       title: "Nuestra Historia",
       description: [
         "Con más de 30 años de experiencia, Mariachi San Isidro se ha convertido en uno de los grupos más solicitados de Pérez Zeledón, Costa Rica.",
-        "Nuestra pasión y amor por la música tradicional mexicana y nuestro compromiso con la excelencia nos han llevado a ser parte de miles de eventos inolvidables.",
+        "Nuestra pasión por la música tradicional mexicana y nuestro compromiso con la excelencia nos han llevado a ser parte de miles de eventos inolvidables.",
         "Cada presentación es única y especial, porque entendemos que tu momento merece la mejor música.",
       ].join(" "),
       values: {
