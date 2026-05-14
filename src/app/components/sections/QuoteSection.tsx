@@ -133,10 +133,11 @@ export function QuoteSection({
                 }
                 className={inputClassName}
               >
-                <option value="30min">{t("quote.duration.minutes30")}</option>
-                <option value="1hour">{t("quote.duration.hours1")}</option>
-                <option value="2hours">{t("quote.duration.hours2")}</option>
-                <option value="3hours">{t("quote.duration.hours3")}</option>
+                <option value="Serenata">{t("quote.duration.serenade")}</option>
+                <option value="30 min">{t("quote.duration.minutes30")}</option>
+                <option value="Personalizado">
+                  {t("quote.duration.personalized")}
+                </option>
               </select>
             </div>
             <div>

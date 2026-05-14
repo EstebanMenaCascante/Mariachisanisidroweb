@@ -20,11 +20,11 @@ export function AboutSection({ t }: AboutSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title={t("about.title")} />
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
-          <div className="relative h-[260px] sm:h-[380px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative w-full h-auto rounded-2xl overflow-hidden shadow-2xl">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1662392228425-92ba6109dc8f?w=800&q=80"
+              src="/Mariachisanisidroweb/images/encabezado/Mariachi_encabezado1.jpg"
               alt="Mariachi group"
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>

@@ -36,15 +36,18 @@ export const initialQuoteForm: QuoteFormValues = {
   phone: "",
   date: "",
   time: "",
-  ampm: "AM",
-  duration: "1hour",
+  ampm: "PM",
+  duration: "30min",
   location: "",
-  eventType: "serenade",
+  eventType: "birthday",
   comments: "",
 };
 
 export const socialLinks = [
-  { href: "https://instagram.com", name: "Instagram" },
-  { href: "https://facebook.com", name: "Facebook" },
+  {
+    href: "https://www.instagram.com/mariachisanisidro_pz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    name: "Instagram",
+  },
+  { href: "https://www.facebook.com/share/1afHVK172X/", name: "Facebook" },
   { href: "https://youtube.com", name: "Youtube" },
 ] as const;
