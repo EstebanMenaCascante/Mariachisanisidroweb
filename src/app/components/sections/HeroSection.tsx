@@ -7,9 +7,17 @@ type HeroSectionProps = {
   t: (key: SiteCopyKey) => string;
   onQuote: () => void;
   onWhatsApp: () => void;
+  imageShift?: string;
+  buttonShift?: string;
 };
 
-export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
+export function HeroSection({
+  t,
+  onQuote,
+  onWhatsApp,
+  imageShift = "0px",
+  buttonShift = "0px",
+}: HeroSectionProps) {
   return (
     <section
       id="inicio"
@@ -17,9 +25,10 @@ export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
     >
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1769230364868-a3c7588ed628?w=1920&q=80"
+          src="/Mariachisanisidroweb/images/encabezado/Mariachi_encabezado2.jpg"
           alt="Mariachi band"
           className="w-full h-full object-cover"
+          style={{ transform: `translateY(${imageShift})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
       </div>
@@ -34,6 +43,7 @@ export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
           <button
             onClick={onQuote}
             className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#FFD700] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg"
+            style={{ transform: `translateY(${buttonShift})` }}
           >
             <Calendar className="w-5 h-5" />
             <span className="font-medium">{t("hero.cta.quote")}</span>
@@ -41,6 +51,7 @@ export function HeroSection({ t, onQuote, onWhatsApp }: HeroSectionProps) {
           <button
             onClick={onWhatsApp}
             className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg"
+            style={{ transform: `translateY(${buttonShift})` }}
           >
             <MessageCircle className="w-5 h-5" />
             <span className="font-medium">{t("hero.cta.whatsapp")}</span>

@@ -6,9 +6,10 @@ import type { SiteCopyKey } from "../../siteCopy";
 
 type AboutSectionProps = {
   t: (key: SiteCopyKey) => string;
+  imageShift?: string;
 };
 
-export function AboutSection({ t }: AboutSectionProps) {
+export function AboutSection({ t, imageShift = "0px" }: AboutSectionProps) {
   const values = [
     { icon: Music2, key: "tradition" },
     { icon: Users, key: "professionalism" },
@@ -25,6 +26,7 @@ export function AboutSection({ t }: AboutSectionProps) {
               src="/Mariachisanisidroweb/images/encabezado/Mariachi_encabezado1.jpg"
               alt="Mariachi group"
               className="w-full h-auto object-contain"
+              style={{ transform: `translateY(${imageShift})` }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>

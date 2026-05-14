@@ -13,6 +13,7 @@ type HeaderProps = {
   onNavigate?: (sectionId: string) => void;
   mode?: "home" | "page";
   homeHref?: string;
+  buttonShift?: string;
 };
 
 export function Header({
@@ -24,6 +25,7 @@ export function Header({
   onNavigate,
   mode = "home",
   homeHref = "/",
+  buttonShift = "0px",
 }: HeaderProps) {
   const handleNavigate = (sectionId: string) => {
     onNavigate?.(sectionId);
@@ -66,6 +68,7 @@ export function Header({
               <button
                 onClick={() => handleNavigate("cotizar")}
                 className="bg-[#D4AF37] hover:bg-[#FFD700] text-black px-6 py-2 rounded-full transition-colors"
+                style={{ transform: `translateY(${buttonShift})` }}
               >
                 {t("nav.cotizar")}
               </button>
@@ -123,6 +126,7 @@ export function Header({
               <button
                 onClick={() => handleNavigate("cotizar")}
                 className="bg-[#D4AF37] text-black px-6 py-2 rounded-full text-center"
+                style={{ transform: `translateY(${buttonShift})` }}
               >
                 {t("nav.cotizar")}
               </button>
